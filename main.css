@@ -1,12 +1,13 @@
 
 #top {
 	text-align: left;
-	background: lightgreen;
+	background: #211A0D;
 	font-family: 'Poiret One', cursive;
 
 }
 #top h1 {
-	border-bottom: solid 5px tomato;
+	border-bottom: solid 5px black;
+	color: pink;
 }
 
 
@@ -27,5 +28,13 @@
 	height: 100px;
 	float: right;
 
+}
+body {
+	background: #FFE7BA;
+	
+}
+footer {
+	background: #5B7F2F;
 
+	
 }
