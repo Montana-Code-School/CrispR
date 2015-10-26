@@ -1,0 +1,31 @@
+
+#top {
+	text-align: left;
+	background: lightgreen;
+	font-family: 'Poiret One', cursive;
+
+}
+#top h1 {
+	border-bottom: solid 5px tomato;
+}
+
+
+#searchButton {
+	margin-top: 15px;
+	margin-left: 25px;
+
+
+}
+
+#searchBar {
+	background: lightblue;
+
+
+}
+ 
+#pic {
+	height: 100px;
+	float: right;
+
+
+}
