@@ -15,7 +15,7 @@
 
 	<div class="col-xs-10 col-xs-offset-2 col-md-4 col-md-offset-4">
 		<form method="POST">
-			<h1 id="yum">Hungry Yet</h1>
+			<h1 id="yum">Recipes</h1>
 				<input type="text" class="" id="searchBar" placeholder="Ingredients"/>
 			<div>
 				<button onclick="getTasks()" id="searchButton" type="submit"  class="btn btn-success">Get Recipes</button>
@@ -23,17 +23,21 @@
 		</form>
 	</div>
 
-	<div id="results" class="col-xs-10 col-xs-offset-2 col-md-4 col-md-offset-4">
+<div id="foot">
+	<div class="container-fluid"> 
+		<div id="results" class="col-xs-10 col-xs-offset-2 col-md-4 col-md-offset-4">
+		</div>
 	</div>
-	
+</div>
 
 <footer>
-	<nav class="navbar navbar-default navbar-fixed-bottom">		
-		<img id="pic" src="images/logo.png">
-	</nav>
+	<div id="footer">
+		<nav class="navbar navbar-navbar-fixed-bottom">
+			<img id="pic" src="images/logo.png">
+			<p>Posted by:</p>
+		</nav>
+	</div>
 </footer>
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/1.1.1/js/md5.js"></script>

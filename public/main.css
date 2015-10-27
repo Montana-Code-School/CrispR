@@ -6,20 +6,26 @@
 
 }
 #top h1 {
-	border-bottom: solid 5px black;
+	border-bottom: solid 5px brown;
 	color: pink;
 }
 
 
 #searchButton {
 	margin-top: 15px;
-	margin-left: 25px;
+	margin-left: 117px;
+	margin-bottom: 50px;
+	text-align: center;
 
 
+}
+#yum{
+	text-align: center;
 }
 
 #searchBar {
 	background: lightblue;
+	margin-left: 90px;
 
 
 }
@@ -29,12 +35,18 @@
 	float: right;
 
 }
-body {
-	background: #FFE7BA;
-	
-}
-footer {
-	background: #5B7F2F;
+
+#foot {
+	background: #FFE7BA ;
+
 
 	
+
+	
+}
+
+#footer {
+	max-height: 150px;
+	background: #5B7F2F;
+
 }
