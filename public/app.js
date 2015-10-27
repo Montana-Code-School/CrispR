@@ -1,36 +1,53 @@
+var RecipeList = React.createClass({
+  render: function() {
+    var recipeData = this.props.data.map(function(r){
+    })
+    return (
+      <div>
+          <h1> List of Recipes</h1>
+            <ul>
+                {recipeData} 
+            </ul>
+      </div>
+      );
+  }
+})
 
 
-function fetchRecipes(){
+var RecipeBox = React.createClass({
+  
+  getInitialState: function (){
+    return {data: []}
+  },
 
-  var apiKey = '6bdf1a878fa347cdf262b7f9b30714c7';
-  var urlKey = 'http://food2fork.com/api/search?key=';
-  var searchField = '&q=shredded%20chicken';
+    loadRecipesFromServer: function(){
+      $.ajax({
+        url: this.props.url,
+        dataTYpe: 'json',
+        cache: false,
+        success:function(data){
+          console.log("recipe success")
+          this.setState({data:data});
+        }.bind(this),
+        error: function(xhr, status, err){
+          console.log("broken" + this.props.url)
+          console.error(this.props.url, status, err.toString());
+        }.bind(this)
+      });
 
-  axios.get(urlKey + apiKey + searchField)
-  .then(function (response) {
-    console.log(response.data.recipes);
-  })
-  .catch(function (response) {
-    console.log(response);
-  });
-}
+    },
+        render: function() {
+            return (
+              <div>
+                  <ul>
+                    <RecipeList data={this.state.data}/>
+                  </ul>
+              </div>
+            );
+        }
+    });
 
-    // var App = React.createClass({
-    //   var recipes = this.data.recipes
-
-
-    //     render: function() {
-    //         return (
-    //           <div>
-    //               <ul>
-    //                 { recipes }
-    //               </ul>
-    //           </div>
-    //         );
-    //     }
-    // });
-
-    // React.render(<App/>, document.getElementById('results'));
+    React.render(<RecipeBox url="/api/recipes/"/>, document.getElementById('results'));
 
 
 
