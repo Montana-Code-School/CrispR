@@ -1,33 +1,44 @@
+#body {
+	background: #b89a60 ;
+	
+}
 
 #top {
 	text-align: left;
-	background: #211A0D;
+	background: #5B7F2F;
 	font-family: 'Poiret One', cursive;
-
+	padding: 0 0 0 15px;
+	background-image: url("images/farmscape.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 80% 200px;
+	height:200px;
 }
 #top h1 {
-	border-bottom: solid 5px brown;
-	color: pink;
+	border-bottom: solid 5px #211A0D;
+	font-size: 80px;
+	color: #b89a60;
+	height: 200px;
 }
 
+#pitchFork {
+	margin: 15px auto;
+}
 
 #searchButton {
 	margin-top: 15px;
-	margin-left: 117px;
+	/*margin-left: 117px;*/
 	margin-bottom: 50px;
-	text-align: center;
-
-
+	/*text-align: center;*/
 }
+
 #yum{
-	text-align: center;
+	/*text-align: center;*/
 }
 
 #searchBar {
 	background: lightblue;
-	margin-left: 90px;
-
-
+	/*margin-left: 90px;*/
 }
  
 #pic {
@@ -36,17 +47,13 @@
 
 }
 
-#foot {
-	background: #FFE7BA ;
-
-
-	
-
-	
-}
-
 #footer {
 	max-height: 150px;
-	background: #5B7F2F;
+	background-color: #5B7F2F;
 
+}
+
+#footNav{
+	background-color: #5B7F2F;
+	border-style: none;
 }
