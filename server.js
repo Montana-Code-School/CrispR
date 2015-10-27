@@ -3,7 +3,7 @@ var app         = express();
 var path        = require('path');
 var bodyParser  = require('body-parser');
 var router      = express.Router();
-
+var axios       = require('axios');
 
 
 // app.use('/', express.static(path.join(__dirname, 'public')));
@@ -38,8 +38,17 @@ router.get('/', function(req, res) {
 });
 
 app.use('/api', router);
+app.use('/api/recipes', fetchRecipes);
 
 
 
+
+axios.get('/user?ID=12345')
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (response) {
+    console.log(response);
+  });
 
 
