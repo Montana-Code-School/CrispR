@@ -13,17 +13,39 @@ var RecipeList = React.createClass({
   }
 })
 
+var RecipeForm = React.createClass({
+  handleSubmit: function(e){
+    e.preventDefault();
+    var foodItem = React.findDOMNode(this.refs.foodItem).value.trim();
+    this.props.onRecipeSubmit({foodItem:foodItem});
+    console.log(foodItem)
+  },
+        render: function() {
+            return (
+              <div>
+                  <form>
+                    <h1 id="yum">Recipes</h1>
+                      <input type="text" ref= "foodItem" className="" id="searchBar" placeholder="Ingredients"/>
+                    <div>
+                      <button onClick={ this.handleSubmit } id="searchButton" className="btn btn-success">Get Recipes</button>
+                    </div>
+                  </form>
+              </div>
+            );
+        }
+    });
 
 var RecipeBox = React.createClass({
-  
+
   getInitialState: function (){
     return {data: []}
   },
 
-    loadRecipesFromServer: function(){
+    loadRecipesFromServer: function(recipe){
+      console.log(this.state),
       $.ajax({
-        url: this.props.url,
-        dataTYpe: 'json',
+        url: this.props.url + recipe.foodItem,
+        dataType: 'json',
         cache: false,
         success:function(data){
           console.log("recipe success")
@@ -39,15 +61,13 @@ var RecipeBox = React.createClass({
         render: function() {
             return (
               <div>
-                  <ul>
-                    <RecipeList data={this.state.data}/>
-                  </ul>
+                <RecipeForm onRecipeSubmit={this.loadRecipesFromServer}/>
               </div>
             );
         }
     });
 
-    React.render(<RecipeBox url="/api/recipes/"/>, document.getElementById('results'));
+    React.render(<RecipeBox url="/api/recipes/"/>, document.getElementById('searchBar'));
 
 
 

@@ -14,9 +14,12 @@ var recipeRoutes   = require('./routes/recipes')
 
 app.use(express.static('public'));
 
+
 app.get('/', function(req, res){
     res.sendFile('index.html');
 });
+
+
 
 
 
@@ -54,7 +57,7 @@ router.get('/', function(req, res) {
 });
 
 app.use('/api', router);
-app.use('/api/recipes', recipeRoutes);
+app.use('/api/recipes/:foodItem', recipeRoutes);
 
 
 
