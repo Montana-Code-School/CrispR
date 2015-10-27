@@ -1,6 +1,16 @@
 var RecipeList = React.createClass({
   render: function() {
     var recipeData = this.props.data.map(function(r){
+      console.log(r)
+      return ( 
+        <div>
+            <h4> <a href={r.source_url}> {r.title} </a></h4>
+            <li> <img src={r.image_url}/> </li>
+            <li> {r.ingredients} </li>
+        </div>
+      );
+
+      
     })
     return (
       <div>
@@ -62,6 +72,7 @@ var RecipeBox = React.createClass({
             return (
               <div>
                 <RecipeForm onRecipeSubmit={this.loadRecipesFromServer}/>
+                <RecipeList data={this.state.data}/>
               </div>
             );
         }

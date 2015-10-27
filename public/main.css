@@ -23,23 +23,21 @@
 
 #pitchFork {
 	margin: 15px auto;
+	box-shadow: 5px 5px 5px #444;
 }
 
 #searchButton {
 	margin-top: 15px;
 	/*margin-left: 117px;*/
 	margin-bottom: 50px;
-	/*text-align: center;*/
+	
+}
+li {
+	list-style: none;
 }
 
-#yum{
-	/*text-align: center;*/
-}
 
-#searchBar {
-	background: lightblue;
-	/*margin-left: 90px;*/
-}
+
  
 #pic {
 	height: 100px;
