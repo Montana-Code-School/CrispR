@@ -20,8 +20,6 @@ app.get('/', function(req, res){
 });
 
 
-
-
 app.set('port', process.env.PORT || 4000);
 
 var server = app.listen(app.get('port'), function(){ 
@@ -39,7 +37,7 @@ router.get('/', function(req, res) {
 
 app.use('/api', router);
 app.use('/api/recipes/:foodItem', recipeRoutes.fetchRecipes);
-app.use('/api/ingredients/:recipeId', recipeRoutes.fetchIngredients);
+// app.use('/api/ingredients/:recipeId', recipeRoutes.fetchIngredients);
 
 
 

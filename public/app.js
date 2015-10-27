@@ -6,7 +6,8 @@ var RecipeList = React.createClass({
         <div>
             <h4> <a href={r.source_url}> {r.title} </a></h4>
             <li> <img src={r.image_url}/> </li>
-            <li> {r.ingredients} </li>
+            
+
         </div>
       );
 
