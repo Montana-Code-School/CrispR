@@ -4,26 +4,74 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Comfortaa' rel='stylesheet'type='text/css'>
+
 	<title>CrispR</title>
 </head>
 	<body id="body">
 
-	<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+	    <div class="navbar-more-overlay"></div>
+	<nav class="navbar navbar-inverse navbar-fixed-top animate">
+		<div class="container navbar-more visible-xs">
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="submit">Submit</button>
+						</span>
+					</div>
+				</div>
+			</form>
+
+
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#">
+						<span class="menu-icon fa fa-picture-o"></span>
+						Photos
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="menu-icon fa fa-bell-o"></span>
+						Reservations
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="container">
+			
+
+			<ul class="nav navbar-nav navbar-right mobile-bar">
+				<li>
+					<a href="#">
+						<span class="menu-icon fa fa-home"></span>
+						Home
+					</a>
+				</li>
+				<li class="hidden-xs">
+					<a href="#">
+						<span class="menu-icon fa fa-picture-o"></span>
+						Recipes
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="menu-icon fa fa-phone"></span>						
+						<span class="hidden-xs">Contact Us</span>
+						<span class="visible-xs">Contact</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
 		<header>
-			<div id="top" class="jumbotron col-xs-12">
+			<div id="top" class="jumbotron col-xs-12 hidden-xs hidden-sm">
 				<h1>Crisp&#1071</h1>
+			</div>
+			<div id="smallTop" class="jumbotron col-xs-12 hidden-md hidden-lg text-center">
+				<h1 class="text-center">Crisp&#1071</h1>
 			</div>
 		</header>
 
@@ -56,14 +104,15 @@
 	</div>
 </footer>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/1.1.1/js/md5.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+≈
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
 <script type="text/jsx" src="app.js"></script>
+<script type="text/js" src="nav.js"></script>
    
 
 </body>
