@@ -31,12 +31,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-router.get('/', function(req, res) {
-   res.json({ message: 'hooray! welcome to our api!' });   
-});
 
 app.use('/api', router);
-app.use('/api/recipes/:foodItem', recipeRoutes.fetchRecipes);
+
+app.use('/api/recipes/:foodItem', recipeRoutes);
 // app.use('/api/ingredients/:recipeId', recipeRoutes.fetchIngredients);
 
 
