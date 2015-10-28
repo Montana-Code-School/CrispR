@@ -17,11 +17,12 @@
 }
 
 #top h1 {
-	font-size: 80px;
 	color: #A3CE0C;
 	height: 200px;
 	line-height: 175px;
 	padding-left: 20px;
+	font-size: 5.3em;
+	padding: auto;
 }
 #smallTop {
 	text-align: left;
@@ -33,7 +34,9 @@
 	line-height: 175px;
 	padding-left: 20px;
 }
-
+#smallTop  h1 {
+	font-size: .8em;
+}
 
 #stripe {
 	background-color: #FFFFFF;
@@ -57,13 +60,6 @@
 	margin: 15px 0 50px 0;
 }
 
-#yum{
-	/*text-align: center;*/
-}
-
-#searchBar {
-	/*margin-left: 90px;*/
-}
  
 #pic {
 	height: 100px;
@@ -81,6 +77,23 @@
 #footNav{
 	background-color: #A3CE0C;
 	border-style: none;
+}
+
+a {
+    color: #A3CE0C;
+    text-decoration: none;
+    
+}
+
+a:hover 
+{
+     color: #fff;
+     font-size: 1.2em; 
+     text-decoration: none; 
+     cursor: pointer;  
+}
+li {
+	list-style-type: none;
 }
 
 html, body {

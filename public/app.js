@@ -4,10 +4,10 @@ var RecipeList = React.createClass({
       console.log(r)
       return ( 
         <div>
-            <h4> <a href={r.source_url}> {r.title} </a></h4>
-            <li> <img src={r.image_url}/> </li>
-            
-
+          
+          <h4> <a href={r.source_url}> {r.title} </a></h4>
+          <li> <img src={r.image_url}/> </li>
+          <li> Rank {r.social_rank} </li>
         </div>
       );
 
@@ -15,10 +15,13 @@ var RecipeList = React.createClass({
     })
     return (
       <div>
-          <h1> List of Recipes</h1>
+        <div className="col-md-12 text-center">
+          
             <ul>
+              <h1> List of Recipes</h1>
                 {recipeData} 
             </ul>
+        </div>
       </div>
       );
   }
