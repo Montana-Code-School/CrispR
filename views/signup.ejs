@@ -26,12 +26,12 @@
       
       <div class="collapse navbar-collapse" id="navbar-collapse-3">
         <ul class="nav navbar-nav navbar-right" id="navList">
-            <li id="navButtons"><a href="index.html">Home</a></li>
+            <li id="navButtons"><a href="/index">Home</a></li>
             <li id="navButtons"><a href="#">Recipes</a></li>
             <li id="navButtons"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In<b class="caret"></b></a>
               <ul class="dropdown-menu multi-level">
-                <li id="navButtons"><a href="signup.html">Sign Up </a></li>
-                <li id="navButtons"><a href="#">Sign In </a></li>
+                
+                <li id="navButtons"><a href="/signin">Sign In</a></li>
                 <li id="navButtons"><a href="#">Sign Out </a></li>
               </ul>
             </li>
@@ -72,19 +72,20 @@
    <div class="col-md-3"></div>
    <div class="col-md-6">
         <div class="row myborder">
+          <form action="/signup" method="post">
             <h4 style="color: #A3CE0C ; margin: initial; margin-bottom: 10px;">Sign Up Now</h4><hr>
-           <div class="input-group margin-bottom-20">
+           <!-- <div class="input-group margin-bottom-20">
                <span class="input-group-addon"><i class="glyphicon glyphicon-queen mycolor"></i></span>
                <input size="60" maxlength="255" class="form-control" placeholder="First Name" name="UserRegistration[fname]" id="UserRegistration_fname" type="text">                                    </div>
           <div class="input-group margin-bottom-20">
                <span class="input-group-addon"><i class="glyphicon glyphicon-king mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="Last Name" name="UserRegistration[lname]" id="UserRegistration_lname" type="text">                                    </div>
+               <input size="60" maxlength="255" class="form-control" placeholder="Last Name" name="UserRegistration[lname]" id="UserRegistration_lname" type="text">                                    </div> -->
            <div class="input-group margin-bottom-20">
                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="User Name" name="UserRegistration[username]" id="UserRegistration_username" type="text">                                                        </div>
+               <input size="60" maxlength="255" class="form-control" placeholder="User Name" name="email" id="UserRegistration_username" type="text">                                                        </div>
            <div class="input-group margin-bottom-20">
                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="Password" name="UserRegistration[password]" id="UserRegistration_password" type="password">                                    </div>
+               <input size="60" maxlength="255" class="form-control" placeholder="Password" name="password" id="UserRegistration_password" type="password">                                    </div>
            
            
            <div class="row">
@@ -92,6 +93,7 @@
                    <button class="btn-u pull-left" type="submit">Sign Up</button>
                </div>
            </div>
+          </form>
        </div>
        <div class="col-md-2"></div>
    </div>
@@ -121,7 +123,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
-<script type="text/js" src="nav.js"></script>
+
 <script type="text/jsx" src="app.js"></script>
  
 

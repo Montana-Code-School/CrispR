@@ -19,7 +19,7 @@ var RecipeList = React.createClass({
         <div className="col-md-12 text-center">
           
             <ul>
-              <h1> List of Recipes</h1>
+              <h1>List of Recipes</h1>
                 {recipeData} 
             </ul>
         </div>
@@ -39,7 +39,7 @@ var RecipeForm = React.createClass({
             return (
               <div>
                   <form>
-                    <h1 id="yum">Recipes</h1>
+                    
                       <input type="text" ref= "foodItem" className="" id="searchBar" placeholder="Ingredients"/>
                     <div>
                       <button onClick={ this.handleSubmit } id="searchButton" className="btn btn-success">Get Recipes</button>
