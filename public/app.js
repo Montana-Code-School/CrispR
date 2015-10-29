@@ -1,6 +1,6 @@
 var RecipeList = React.createClass({
   render: function() {
-    var recipeData = this.props.data.map(function(r){
+     var recipeData = this.props.data.map(function(r){
       console.log(r)
       return ( 
         <div>
@@ -8,7 +8,7 @@ var RecipeList = React.createClass({
           <h4> <a href={r.source_url}> {r.title} </a></h4>
           <li> <img src={r.image_url}/> </li>
           <li> Rank {r.social_rank} </li>
-          
+
         </div>
       );
 
