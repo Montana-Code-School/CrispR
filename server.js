@@ -60,8 +60,8 @@ app.use(bodyParser.json());
 
 app.use('/api', router);
 
-app.use('/api/recipes/:foodItem', recipeRoutes);
-// app.use('/api/ingredients/:recipeId', recipeRoutes.fetchIngredients);
+app.use('/api/recipes/:foodItem', recipeRoutes.fetchRecipes);
+app.use('/api/recipe/:recipeId', recipeRoutes.fetchRecipe);
 
 
 

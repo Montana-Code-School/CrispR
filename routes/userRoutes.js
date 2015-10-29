@@ -12,7 +12,7 @@ app.get('/' , function(req, res){
             user : req.user
         });
     });
-//POST PAGE ================================
+
  
 
     // LOGOUT ==============================

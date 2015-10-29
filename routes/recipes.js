@@ -1,6 +1,7 @@
  var axios          = require('axios');
+ module.exports = { 
  
- function fetchRecipes(req, res){
+fetchRecipes: function(req, res){
  
     var foodItem = req.params.foodItem;
     var apiKey = '6bdf1a878fa347cdf262b7f9b30714c7';
@@ -16,28 +17,27 @@
    .catch(function (response) {
      console.log(response);
    });
- }
- module.exports = fetchRecipes;
+ },
 
  
  ////////////////////////////////////////////////////////////
 
 
- // function fetchIngredients( ID, req, res){
- 
- //    var foodItem = req.params.foodId;
- //    var apiKey = '6bdf1a878fa347cdf262b7f9b30714c7';
- //    var urlKey = 'http://food2fork.com/api/get?key=';
- //    var searchField = '&rId=' + foodId;
+ fetchRecipe: function( rId, req, res) {
+    var apiKey = '6bdf1a878fa347cdf262b7f9b30714c7';
+    var urlKey = 'http://food2fork.com/api/get?key=';
+    var searchField = '&rId=' + rId;
     
  
- //   axios.get(urlKey + apiKey + searchField)
- //   .then(function (response) {
- //     res.json(response.data.recipes);
- //     console.log(response.data.recipes);
- //   })
- //   .catch(function (response) {
- //     console.log(response);
- //   });
- // }
- // module.exports = fetchIngredients;
+   axios.get(urlKey + apiKey + searchField)
+   .then(function (response) {
+    // console.log(response);
+     // res.json(response.data.recipes);
+     // console.log(response.data.recipes);
+   })
+   .catch(function (response) {
+     console.log(response);
+   });
+ }
+}
+ // module.exports = fetchRecipe;
