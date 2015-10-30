@@ -30,8 +30,18 @@
 #panel-spacing {
   margin-bottom: 20px;
 }
+#searchBar {
+  -webkit-box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
+  -moz-box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
+  box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
+}
+#userText {
+  border-radius: 7px;
+  background-color: #e7a61a;
+}
 #topOfList {
   color: white;
+  font-family: 'Poiret One', cursive;
 }
 
 #navMenu {
@@ -107,6 +117,7 @@
 
 #searchButton {
     margin: 15px 0 50px 0;
+    background-color: #e7a61a;
 }
 
 

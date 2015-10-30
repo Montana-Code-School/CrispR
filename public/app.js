@@ -5,7 +5,7 @@ var RecipeList = React.createClass({
       return ( 
         <div>
 
-            <div className="col-md-6" id="panel-spacing">
+            <div className="col-md-6 col-sx-10 col-sm-8 col-lg-4 col-xs-offset-1" id="panel-spacing">
               <div className="panel panel-default" id="panel">
                 <div className="panel-heading" id="panel-heading">
                 <h6 className="panel-title"><a href={r.source_url}> {r.title} </a></h6>
@@ -25,7 +25,7 @@ var RecipeList = React.createClass({
         <div className="col-md-12 text-center">
           
             <ul>
-              <h1 id="topOfList">Recipes</h1>
+              
                 {recipeData} 
             </ul>
         </div>
@@ -45,8 +45,8 @@ var RecipeForm = React.createClass({
             return (
               <div>
                   <form>
-                    
-                      <input type="text" ref= "foodItem" className="" id="searchBar" placeholder="Ingredients"/>
+                      <h1 id="topOfList">Find Your Food:</h1>
+                      <input type="text" ref= "foodItem" className="" id="userText" placeholder="        Ingredients"/>
                     <div>
                       <button onClick={ this.handleSubmit } id="searchButton" className="btn btn-success">Get Recipes</button>
                     </div>
