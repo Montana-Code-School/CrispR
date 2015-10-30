@@ -8,44 +8,42 @@
 		<title>CrispR</title>
 	</head>
 
-<body id="body">
-	<nav class="navbar navbar-inverse">
-      <div class="container">
-        
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-    
-        
-        <div class="collapse navbar-collapse" id="navbar-collapse-3">
-          <ul class="nav navbar-nav navbar-right" id="navList">
-              <li id="navButtons"><a href="/">Home </a></li>
-              <li id="navButtons"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Member Services<b class="caret"></b></a>
-              	 <ul class="dropdown-menu multi-level">
-                        <li id="navButtons"><a href="/signup">Sign Up</a></li>
-                        <li id="navButtons"><a href="/login">Log In</a></li>
-                        <li id="navButtons"><a href="#">Sign Out </a></li>
-                    </ul>
-              </li>
-          </ul>
+	<body id="body">
+
+<!--********************************* Navbar concepts block ************************************* -->
+
+		<nav class="navbar navbar-inverse navbar-fixed-top animate">
+    		<nav class="navbar navbar-inverse">
+      			<div class="container">
           
-                   
-
-
-        </div> 
-      </div> 
-    </nav>  
-</div> 
-
- 	
-	
-	
-			
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			            </button>
+			        </div> <!-- navbar-header -->
+      
+          
+		          	<div class="collapse navbar-collapse" id="navbar-collapse-3">
+		            	<ul class="nav navbar-nav navbar-right" id="navList">
+		                	<li id="navButtons"><a href="/">Home</a></li>
+		                	<li id="navButtons"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Member Services<b class="caret"></b></a>
+		                  		<ul class="dropdown-menu multi-level">
+		                    		<li id="navButtons"><a href="/signup">Sign Up</a></li>
+		                    		<li id="navButtons"><a href="/login">Log In</a></li>
+		                    		<li id="navButtons"><a href="#">Sign Out </a></li>
+		                  		</ul>
+		                	</li>
+		            	</ul>
+		          	</div>
+	       		</div> <!-- container -->
+	    	</nav> <!-- navbar navbar-inverse --> 
+	    </nav> <!-- navbar navbar-inverse navbar-fixed-top animate -->
+    
+<!--********************************************* Navbar concepts block end  ********************************************* -->
+		
 	<header>
 		<div id="top" class="jumbotron col-xs-12 hidden-xs hidden-sm">
 			<h1>Crisp&#1071</h1>
@@ -80,16 +78,19 @@
 		</div>
 	</footer>
 
-	
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/1.1.1/js/md5.js"></script>
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
-	<script type="text/jsx" src="app.js"></script>
-   
+<!--***************** External Scripts for JQuery, React, Bootstrap ***************************************** -->
+
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/1.1.1/js/md5.js"></script>
+	    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+
+<!--********************************************* Local Scripts ********************************************* -->
+
+    	<script type="text/jsx" src="app.js"></script>
 
 	</body>
 </html>
