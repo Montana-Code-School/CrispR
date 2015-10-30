@@ -4,11 +4,17 @@ var RecipeList = React.createClass({
       console.log(r)
       return ( 
         <div>
-          
-          <h4> <a href={r.source_url}> {r.title} </a></h4>
-          <li> <img src={r.image_url} id="thumbnail"/> </li>
-          <li> Rank {r.social_rank} </li>
 
+            <div className="col-md-6" id="panel-spacing">
+              <div className="panel panel-default" id="panel">
+                <div className="panel-heading" id="panel-heading">
+                <h6 className="panel-title"><a href={r.source_url}> {r.title} </a></h6>
+            </div>
+            <div className="panel-body">
+          <li> <img src={r.image_url} id="thumbnail"/> </li>
+                  </div>
+                </div>
+            </div>
         </div>
       );
 
@@ -19,7 +25,7 @@ var RecipeList = React.createClass({
         <div className="col-md-12 text-center">
           
             <ul>
-              <h1>List of Recipes</h1>
+              <h1 id="topOfList">Recipes</h1>
                 {recipeData} 
             </ul>
         </div>

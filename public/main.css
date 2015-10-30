@@ -14,10 +14,25 @@
     margin-bottom: 10px;
 }
 #thumbnail {
-  height: 250px;
-  width: 250px;
-}
+  height: 200px;
+  width: 200px;
 
+}
+#panel {
+  height: 300px;
+  width: 400px;
+  background: black; 
+}
+#panel-heading {
+  background: #8B4513;
+  color: white;
+}
+#panel-spacing {
+  margin-bottom: 20px;
+}
+#topOfList {
+  color: white;
+}
 
 #navMenu {
     line-height: 46px;
@@ -119,13 +134,6 @@ a {
    
 }
 
-a:hover 
-{
-    color: #fff;
-    font-size: 1.2em; 
-    text-decoration: none; 
-    cursor: pointer;  
-}
 li {
     list-style-type: none;
 }
