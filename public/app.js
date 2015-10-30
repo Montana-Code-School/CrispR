@@ -6,7 +6,7 @@ var RecipeList = React.createClass({
         <div>
           
           <h4> <a href={r.source_url}> {r.title} </a></h4>
-          <li> <img src={r.image_url}/> </li>
+          <li> <img src={r.image_url} id="thumbnail"/> </li>
           <li> Rank {r.social_rank} </li>
 
         </div>
@@ -90,23 +90,7 @@ var RecipeBox = React.createClass({
 
 
 
-   //   function getTasks() {
-   //     $.get("https://localhost/TEST.TestService.svc/rest/Services?CostCentreNo=1&Filter=0",
-   //       function(data){
-   //         alert("Data Loaded: " + data);
-   //       });
-   // }
-
-   //    function getTasks() {
-   //     $.post("https://localhost/TEST.TestService.svc/rest/Services?CostCentreNo=1&Filter=0",
-   //       function(data){
-   //         alert("Data Loaded: " + data);
-   //       });
-   // }
    
-
-
-
 
 
 

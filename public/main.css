@@ -13,6 +13,11 @@
     line-height: 46px;
     margin-bottom: 10px;
 }
+#thumbnail {
+  height: 250px;
+  width: 250px;
+}
+
 
 #navMenu {
     line-height: 46px;
