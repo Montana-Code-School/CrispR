@@ -52,7 +52,7 @@
 
 #navbar-collapse-3 {
     margin-left: 100px;
-    margin-right: -45px;
+    margin-right: -75px;
     margin-top: 10px;
 }
 
@@ -127,6 +127,11 @@
 
 }
 
+#veggies {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+
 #footer {
     max-height: 100px;
     background-color: #A3CE0C ;
@@ -164,6 +169,8 @@ body {
            padding: 20px;;
            border: 1px solid #ccc;
            font-family: 'Poiret One', cursive;
+           font-size: 32px;
+           color: #FFFFFF;
            
            border-radius: 4px;
            -webkit-box-shadow: 0px 0px 3px 0px #72c02c ;
@@ -252,6 +259,14 @@ body {
            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
        }
+
+#vendorTable {
+  color: #FFFFFF;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #A3CE0C;
+}
 
 /**************************Prfile Page**********************/
 #userInfo {
