@@ -1,27 +1,26 @@
 // *******************************  Require Concepts Block **************** \\
 
-var express        = require('express');
-var app            = express();
-var path           = require('path');
+var express        = require('express'), 
+app            = express(),
+path           = require('path'),
 
-var bodyParser     = require('body-parser');
-var axios          = require('axios');
-var mongoose 	   = require('mongoose');
-var passport 	   = require('passport');
-var flash    	   = require('connect-flash');
-var morgan         = require('morgan');
-var cookieParser   = require('cookie-parser');
-var bodyParser     = require('body-parser');
-var session        = require('express-session');
+bodyParser     = require('body-parser'),
+axios          = require('axios'),
+mongoose 	   = require('mongoose'),
+passport 	   = require('passport'),
+flash    	   = require('connect-flash'),
+morgan         = require('morgan'),
+cookieParser   = require('cookie-parser'),
+bodyParser     = require('body-parser'),
+session        = require('express-session'),
 
-var db             = require('./models/db');
-var blogModel      = require('./models/user');
-var router         = express.Router();
-var Vendor 		   = require('./models/vendor')
+db             = require('./models/db'),
+blogModel      = require('./models/user'),
+router         = express.Router(),
+Vendor 		   = require('./models/vendor'),
 
-
-var vendorRoutes   = require('./routes/vendor')
-var recipeRoutes   = require('./routes/recipes')
+vendorRoutes   = require('./routes/vendor'),
+recipeRoutes   = require('./routes/recipes')
 
 
 require('./config/passport')(passport); 
