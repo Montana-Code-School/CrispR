@@ -52,59 +52,41 @@
  <!-- ***************VENDOR INPUT STARTS HERE**************** -->
 
 <div class="container-fluid">
-    <h3 style="color: white;  font-family: 'Poiret One', cursive; font-size: 32px; text-align: center;">Farmer's Market Vendor Form</h3>
+    <h3 style="color: white;  font-family: 'Poiret One', cursive; font-size: 32px; text-align: center; padding-bottom: 10px;">Farmer's Market Vendors</h3>
 
-    <br/>
+
 <div class="container">
-   <div class="col-md-3"></div>
-   <div class="col-md-6">
-        <div class="row myborder">
-          <form action="http://localhost:4000/api/vendors" method="post">
-            <h4 style="color: #A3CE0C ; margin: initial; margin-bottom: 10px;">Sign Up Now</h4><hr>
-           <div class="input-group margin-bottom-20">
-               <span class="input-group-addon"><i class="glyphicon glyphicon-queen mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="Vendor Name" name="vendorName" id="vendorName" type="text">                                    </div>
-            <div class="input-group margin-bottom-20">
-               <span class="input-group-addon"><i class="glyphicon glyphicon-queen mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="Contact First Name" name="contactFirstName" id="contactFirstName" type="text">                                    </div>
-          <div class="input-group margin-bottom-20">
-               <span class="input-group-addon"><i class="glyphicon glyphicon-king mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="Contact Last Name" name="contactLastName" id="contactLastName" type="text">                                    </div>
-           <div class="input-group margin-bottom-20">
-               <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="Location of Your Business (Address, City, State, Zip)" name="address" id="address" type="text">                                                        </div>
-           <div class="input-group margin-bottom-20">
-               <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
-               <input size="60" maxlength="255" class="form-control" placeholder="What type of produce do you provide?" name="produce" id="produce" type="text">                                    </div>
-           <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="kale"/>Kale</div>
-           <div>    
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="cucumber"/>Cucumber</div>
-              
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="apple"/>Apple</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="orange"/>Orange</div>
-            <div>
-                <input type="checkbox" name="meats[]" id="meats" ref="meatTypes" value="chicken"/>Chicken</div>
-            <div>
-                <input type="checkbox" name="meats[]" id="meats" ref="meatTypes" value="beef"/>Beef</div>
-            <div>
-                <input type="checkbox" name="other[]" id="other" ref="otherTypes" value="other"/>Spices</div>
-                
 
+<div class="container" id="vendorList">
            
-           
-           <div class="row">
-               <div class="col-md-12">
-                   <button class="btn-u pull-left" type="submit">Sign Up</button>
-               </div>
-           </div>
-          </form>
-       </div>
-       <div class="col-md-2"></div>
-   </div>
-     </div>
+        
+    <table class="table table-hover" id="vendorTable">
+      
+    </table>  
+    
+    <div class="col-sm-12 ">
+      
+
+        <ul class="pagination pull-right">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>       
+        
+    </div>
+        
+</div>
+
+
+
+</div>
+
+
+   
 
 <!-- START FOOTER -->
 

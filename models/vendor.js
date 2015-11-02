@@ -8,6 +8,10 @@ var VendorSchema = new Schema({
     contactLastName: String,
     address: String,
     product: String,
+    veggies: Array,
+    fruits: Array,
+    meats: Array,
+    other: Array
 });
 
 module.exports = mongoose.model('Vendor', VendorSchema);
