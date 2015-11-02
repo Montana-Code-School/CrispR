@@ -17,7 +17,12 @@ var session        = require('express-session');
 var db             = require('./models/db');
 var blogModel      = require('./models/user');
 var router         = express.Router();
+var Vendor 		   = require('./models/vendor')
+
+
+var vendorRoutes   = require('./routes/vendor')
 var recipeRoutes   = require('./routes/recipes')
+
 
 require('./config/passport')(passport); 
 
@@ -27,6 +32,8 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
+
+// mongoose.connect('mongodb://localhost/Crispr'); 
 
 
 
@@ -55,7 +62,10 @@ var server = app.listen(app.get('port'), function(){
 	console.log('Express server listening on port ' + server.address().port)
 });
 
+app.use('/api', vendorRoutes);
+
 app.use('/api', router);
+
 app.use('/api/recipes/:foodItem', recipeRoutes);
 // app.use('/api/ingredients/:recipeId', recipeRoutes.fetchIngredients);
 
