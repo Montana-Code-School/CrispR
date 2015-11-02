@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+
 router.use(bodyParser.urlencoded({ extended: true }))
 
 router.use(function(req, res, next) {
@@ -18,6 +19,11 @@ router.route('/vendors')
         contactLastName: req.body.contactLastName,
         address: req.body.address,
         product: req.body.product,
+        veggies: req.body.veggies,
+        fruits: req.body.fruits,
+        meats: req.body.meats,
+        other: req.body.other
+        
       }
 
   	mongoose.model('Vendor').create(newVendor, function(err, vendor){
