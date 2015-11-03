@@ -14,10 +14,35 @@
     margin-bottom: 10px;
 }
 #thumbnail {
-  height: 250px;
-  width: 250px;
-}
+  height: 200px;
+  width: 200px;
 
+}
+#panel {
+  height: 300px;
+  width: 400px;
+  background: black; 
+}
+#panel-heading {
+  background: #8B4513;
+  color: white;
+}
+#panel-spacing {
+  margin-bottom: 20px;
+}
+#searchBar {
+  -webkit-box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
+  -moz-box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
+  box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
+}
+#userText {
+  border-radius: 7px;
+  background-color: #e7a61a;
+}
+#topOfList {
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
 
 #navMenu {
     line-height: 46px;
@@ -92,6 +117,7 @@
 
 #searchButton {
     margin: 15px 0 50px 0;
+    background-color: #e7a61a;
 }
 
 
@@ -99,6 +125,11 @@
     height: 100px;
     float: right;
 
+}
+
+#veggies {
+  color: #FFFFFF;
+  font-size: 32px;
 }
 
 #footer {
@@ -119,13 +150,6 @@ a {
    
 }
 
-a:hover 
-{
-    color: #fff;
-    font-size: 1.2em; 
-    text-decoration: none; 
-    cursor: pointer;  
-}
 li {
     list-style-type: none;
 }
@@ -145,6 +169,8 @@ body {
            padding: 20px;;
            border: 1px solid #ccc;
            font-family: 'Poiret One', cursive;
+           font-size: 18px;
+           color: #FFFFFF;
            
            border-radius: 4px;
            -webkit-box-shadow: 0px 0px 3px 0px #72c02c ;
@@ -233,3 +259,22 @@ body {
            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
        }
+
+#vendorTable {
+  color: #FFFFFF;
+}
+
+.table-hover tbody tr:hover td {
+  background-color: #A3CE0C;
+}
+
+/**************************Prfile Page**********************/
+#userInfo {
+  margin-top: 15px;
+
+}
+
+
+
+
+

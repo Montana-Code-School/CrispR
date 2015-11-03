@@ -29,7 +29,7 @@
           <div class="collapse navbar-collapse" id="navbar-collapse-3">
             <ul class="nav navbar-nav navbar-right" id="navList">
               <li id="navButtons"><a href="/">Home</a></li>
-              <li id="navButtons"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Vendor Services<b class="caret"></b></a>
+              <li id="navButtons"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Member Services<b class="caret"></b></a>
                 <ul class="dropdown-menu multi-level">
                   <li id="navButtons"><a href="/login">Log In</a></li>
                   <li id="navButtons"><a href="#">Sign Out </a></li>
@@ -49,44 +49,43 @@
       </div>
 
 
-  <br/>
-      <div class="container">
-        <div class="col-md-3"></div>
-          <div class="col-md-6">
-            <div class="row myborder">
-              <form action="/signup" method="post">
-                <h4 style="color: #A3CE0C ; margin: initial; margin-bottom: 10px;">Sign Up Now</h4><hr>
-                  <!-- <div class="input-group margin-bottom-20">
-                     <span class="input-group-addon"><i class="glyphicon glyphicon-queen mycolor"></i></span>
-                     <input size="60" maxlength="255" class="form-control" placeholder="First Name" name="UserRegistration[fname]" id="UserRegistration_fname" type="text">                                    </div>
-                  <div class="input-group margin-bottom-20">
-                     <span class="input-group-addon"><i class="glyphicon glyphicon-king mycolor"></i></span>
-                     <input size="60" maxlength="255" class="form-control" placeholder="Last Name" name="UserRegistration[lname]" id="UserRegistration_lname" type="text">                                    </div> -->
-                <div class="input-group margin-bottom-20">
-                   <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-user mycolor"></i>
-                   </span>
-                    <input size="60" maxlength="255" class="form-control" placeholder="User Name" name="email" id="UserRegistration_username" type="text">   
-                </div>
+ <!-- ***************VENDOR INPUT STARTS HERE**************** -->
 
-                <div class="input-group margin-bottom-20">
-                   <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-lock mycolor"></i>
-                   </span>
-                    <input size="60" maxlength="255" class="form-control" placeholder="Password" name="password" id="UserRegistration_password" type="password">                                    
-                </div>
+<div class="container-fluid">
+    <h3 style="color: white;  font-family: 'Poiret One', cursive; font-size: 32px; text-align: center; padding-bottom: 10px;">Farmer's Market Vendors</h3>
+
+
+<div class="container">
+
+<div class="container" id="vendorTable">
            
-           
-              <div class="row">
-                <div class="col-md-12">
-                  <button class="btn-u pull-left" type="submit">Sign Up</button>
-                </div> <!-- col-md-12 -->
-              </div> <!-- row -->
-            </form>  <!-- col-md-12 -->
-          </div> <!-- row myborder -->
-          <div class="col-md-2"></div>
-        </div> <!-- col-md-6 -->
-      </div> <!-- container -->
+    
+    
+    <div class="col-sm-12 ">
+      
+
+        <ul class="pagination pull-right">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">»</a></li>
+        </ul>       
+        
+    </div>
+        
+</div>
+
+
+
+</div>
+
+
+   
+
+<!-- START FOOTER -->
 
     <div id="foot">
       <div class="container-fluid"> 
@@ -115,7 +114,7 @@
 
 <!--********************************************* Local Scripts ********************************************* -->
 
-    <script type="text/jsx" src="app.js"></script>
+    <script type="text/jsx" src="vendorList.js"></script>
  
 
   </body>

@@ -56,12 +56,11 @@
 
     <br/>
 <div class="container">
-   <div class="col-md-8"></div>
-   <div class="col-md-10 col-md-offset-1">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
         <div class="row myborder">
           <form action="http://localhost:4000/api/vendors" method="post">
-            <h4 style="color: #A3CE0C ; margin: initial; margin-bottom: 10px;">Enter Your Information!</h4><hr>
-            <div class="col-md-6">
+            <h4 style="color: #A3CE0C ; margin: initial; margin-bottom: 10px;">Sign Up Now</h4><hr>
            <div class="input-group margin-bottom-20">
                <span class="input-group-addon"><i class="glyphicon glyphicon-queen mycolor"></i></span>
                <input size="60" maxlength="255" class="form-control" placeholder="Vendor Name" name="vendorName" id="vendorName" type="text">                                    </div>
@@ -77,80 +76,23 @@
            <div class="input-group margin-bottom-20">
                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
                <input size="60" maxlength="255" class="form-control" placeholder="What type of produce do you provide?" name="produce" id="produce" type="text">                                    </div>
-            </div>
-            <!-- Vegetables-->
-        <div class="col-md-2">
-          <h3>Vegetables</h3>
-            <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="artichoke"/>Artichoke</div>
-            <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="arugula"/>Arugula</div>
-            <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="carrots"/>Carrots</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="cucumber"/>Cucumber</div>
-            <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="corn"/>Corn</div>
-            <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="greanBeans"/>Green Beans</div>
-            <div>
+           <div>
                 <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="kale"/>Kale</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="lettuce"/>Lettuce</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Onions"/>Onions</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Potatoes"/>Potatoes</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Spinach"/>Spinach</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Tomatoes"/>Tomatoes</div>
-            <div>   
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Zucchini"/>Zucchini</div>
-        </div>
-                <!-- Fruits-->
-        <div class="col-md-2">
-          <h3>Fruit</h3>  
+           <div>    
+                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="cucumber"/>Cucumber</div>
+              
             <div>
                 <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="apple"/>Apple</div>
             <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="avocados"/>Avocados</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="bananas"/>Bananas</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="blackberries"/>Blackberries</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="cherries"/>Cherries</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="kiwis"/>Kiwis</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="mangos"/>Mangos</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="melons"/>Melons</div>
-            <div>
                 <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="orange"/>Orange</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="peaches"/>Peaches</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="pears"/>Pears</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="strawberries"/>Strawberries</div>
-            <div>
-                <input type="checkbox" name="fruits[]" id="fruits" ref="fruitTypes" value="watermelons"/>Watermelons</div>
-        </div>
-        <div class="col-md-2">
-          <h3>Meats</h3>
-
             <div>
                 <input type="checkbox" name="meats[]" id="meats" ref="meatTypes" value="chicken"/>Chicken</div>
             <div>
                 <input type="checkbox" name="meats[]" id="meats" ref="meatTypes" value="beef"/>Beef</div>
             <div>
                 <input type="checkbox" name="other[]" id="other" ref="otherTypes" value="other"/>Spices</div>
-              
                 
 
-       <div class="col-md-2"></div>
            
            
            <div class="row">
@@ -164,25 +106,11 @@
    </div>
      </div>
 
-     <div class="row" id="userInfo">
-  <div class="col-sm-4 col-sm-offset-1" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="well">
-      <h3><span class="fa fa-user"></span>  Hello Vendor</h3>
-        <p>
-          <strong>id</strong>: <%= user._id %><br>
-          <strong>email</strong>: <%= user.local.email %><br>
-          <!-- <strong>password</strong>: --> <!-- <%= user.local.password %> -->
-        </p>
-    </div>
-  </div>
-</div>
-
 <!-- START FOOTER -->
 
     <div id="foot">
       <div class="container-fluid"> 
         <div id="results" class="col-xs-10 col-xs-offset-2 col-md-4 col-md-offset-4">
-
         </div>
       </div>
     </div>
@@ -212,6 +140,3 @@
 
   </body>
 </html>
-
-
-
