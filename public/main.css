@@ -6,6 +6,8 @@
     margin-bottom: 10px;
 }
 
+
+
 #brand {
     color: #A3CE0C ;
     font-size: 46px;
@@ -52,7 +54,7 @@
 
 #navbar-collapse-3 {
     margin-left: 100px;
-    margin-right: -75px;
+    margin-right: -45px;
     margin-top: 10px;
 }
 
@@ -62,6 +64,7 @@
     font-family: 'Poiret One', cursive;
     font-size: 20px;
     font-weight: 800;
+    color: red;
 }
 
 #top {
@@ -104,7 +107,7 @@
 }
 
 #secondStripe {
-    background-color: #FFFFFF ;
+    background-color: #696969;
     height: 5px;
     margin-bottom: 75px;
 }
@@ -210,7 +213,7 @@ body {
            white-space: nowrap;
            border: 0;
            color: #fff;
-           font-size: 14px;
+           font-size: 18px;
            cursor: pointer;
            font-weight: 400;
            padding: 6px 13px;
@@ -222,7 +225,7 @@ body {
        .input-group-addon {
            border-right: 0;
            /*color: #b3b3b3 ;*/
-           font-size: 14px;
+           font-size: 18px;
            background: #fff;
            padding: 6px 12px;
            font-size: 14px;
