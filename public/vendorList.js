@@ -1,44 +1,47 @@
 var VendorList = React.createClass({
-	
+  
     render: function() {
+      var d = this.props.data
+      console.log(d);
         var addVendor = this.props.data.map(function(vendor){
             return (
-              <div>
-
-        <thead>
+      
         <tr>
-          <th>Vendor</th>
-          <th>Contact First Name</th>
-          <th>Contact Last Name</th>
-          <th>Address</th>
-          <th>Veggies</th>
-          <th>Fruits</th>
-          <th>Meats</th>
-          <th>Other</th>
+          <td>{vendor.vendorName}</td>
+          <td>{vendor.contactFirstname}</td>
+          <td>{vendor.contactLastName}</td>
+          <td>{vendor.address}</td>
+          <td>{vendor.veggies}</td>
+          <td>{vendor.fruits}</td>
+          <td>{vendor.meats}</td>
+          <td>{vendor.other}</td>
         </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>vendor.vendorName</td>
-          <td>vendor.contactFirstname</td>
-          <td>vendor.contactLastName</td>
-          <td>vendor.address</td>
-          <td>vendor.veggies</td>
-          <td>vendor.fruits</td>
-          <td>vendor.meats</td>
-          <td>vendor.other</td>
-
-        </tr>
-        
-      </tbody>
-
-              </div>
+      
             )
         });
         
         return (
-                <div>
-                    {addVendor}
+          <div>
+           <table className="table table-hover" id="vendorList">
+    
+            <thead>
+              <tr>
+                <th>Vendor</th>
+                <th>Contact First Name</th>
+                <th>Contact Last Name</th>
+                <th>Address</th>
+                <th>Veggies</th>
+                <th>Fruits</th>
+                <th>Meats</th>
+                <th>Other</th>
+              </tr>
+            </thead>
+            <tbody>
+
+                {addVendor}
+            
+            </tbody>
+            </table>
                 </div>
             );
     }
@@ -80,4 +83,4 @@ var VendorBox = React.createClass({
 });
 
 
-React.render(<VendorBox url="/api/vendors/"/>, document.getElementById("vendorList"));
+React.render(<VendorBox url="/api/vendors/"/>, document.getElementById("vendorTable"));
