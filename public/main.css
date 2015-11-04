@@ -4,6 +4,7 @@
 .navbar-inverse {
     background-color: black;
     margin-bottom: 10px;
+/*    border-bottom: 5px solid #696969;*/
 }
 
 
@@ -51,8 +52,9 @@
   background-color: #e7a61a;
 }
 #topOfList {
-  color: white;
+  color: #A3CE0C;
   font-family: 'Poiret One', cursive;
+
 }
 
 #navMenu {
@@ -85,16 +87,10 @@
     background-position: center right;
     background-size: 100% 500px;
     height:500px;
+    color: #A3CE0C;
 }
 
-#top h1 {
-    color: #A3CE0C ;
-    height: 200px;
-    line-height: 175px;
-    padding-left: 20px;
-    font-size: 5.3em;
-    padding: auto;
-}
+
 #smallTop {
     text-align: left;
     background: black;
@@ -109,16 +105,17 @@
     font-size: .8em;
 }
 
-#stripe {
+/*#stripe {
     background-color: #FFFFFF ;
     height: 5px;
     margin-bottom: 20px
-}
+}*/
 
 #secondStripe {
     background-color: #696969;
     height: 5px;
     margin-bottom: 0px;
+    background-position: fixed;
 }
 
 #pitchFork {
@@ -132,9 +129,15 @@
     background-color: #e7a61a;
 }
 
+#topPic {
+    height: 100%;
+    width: 100px;
+    float: left;
 
+}
 #pic {
-    height: 100px;
+    height: 100%;
+    width: 100px;
     float: right;
 
 }
@@ -146,14 +149,17 @@
 
 #footer {
     max-height: 100px;
-    background-color: #696969 ;
-    margin-top: 75px;
+    background-color: black;
+    margin-top: 60px;
 
 }
 
 #footNav{
-    background-color: #696969 ;
-    border-style: none;
+    background-color: black;
+    border-top: 5px solid #696969;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 a {
