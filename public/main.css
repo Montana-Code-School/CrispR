@@ -17,7 +17,8 @@
 #panel {
   height: 300px;
   width: 400px;
-  background: black; 
+  background: black;
+  margin-left: -50%; 
 }
 #panel-heading {
   background: #8B4513;
@@ -30,7 +31,7 @@
   background-color: black;
   height: 200px;
   width: 600px;
-  margin-left: 30%; 
+  margin-left: 20%; 
   margin-top: 50px;
   border-radius: 10px;
   font-size: 12px;

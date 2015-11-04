@@ -117,12 +117,12 @@ var Recipe  = React.createClass({
                 <h6 className="panel-title"><a href={this.props.r.source_url}> {this.props.r.title} </a></h6>
               </div>
               <div className="panel-body">
-                <li> <img src={this.props.r.image_url} id="thumbnail"/> </li>
-              </div>
               <div>
                 <button onClick= {this.loadIngredientsFromServer.bind(this, this.props.r.recipe_id)}
                   type="button" className="btn btn-default">{text}</button>
                 <button onClick= {this.handleClick} type="button" className="btn btn-default">{text}</button>
+              </div>
+                <li> <img src={this.props.r.image_url} id="thumbnail"/> </li>
               </div>
             </div>
           </div>
