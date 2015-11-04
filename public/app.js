@@ -135,7 +135,9 @@ var Recipe  = React.createClass({
 var RecipeIngredients  = React.createClass({
 
     render: function() {
-      var ingredientList = this.props.ingredientsData; 
+      var ingredientList = this.props.ingredientsData.map(function(item){
+        return <li>{item}</li>
+      }); 
          return !this.props.ingredientsDisplay ? <div/> : (
           <div>
             <div className="col-md-10" id="ingreed">
@@ -146,7 +148,6 @@ var RecipeIngredients  = React.createClass({
                   </li>
                 </ul>
             </div>
-          
         </div>
       </div>
         );
