@@ -1,25 +1,18 @@
-
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
-
 .navbar-inverse {
     background-color: black;
     margin-bottom: 10px;
 }
-
-
-
 #brand {
-      color: #A3CE0C ;
-      font-size: 46px;
-      background-position: center right;
-      background-size: 100% 500px;
-      height:500px;
-  }
-
+    color: #A3CE0C ;
+    font-size: 46px;
+    font-family: 'Poiret One', cursive;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
 #thumbnail {
   height: 200px;
   width: 200px;
-
 }
 #panel {
   height: 300px;
@@ -41,8 +34,6 @@
   margin-top: 50px;
   border-radius: 10px;
   font-size: 12px;
-
-
  /* -webkit-box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);*/
 /*  -moz-box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);
   box-shadow: 0px -2px 9px 7px rgba(255,255,255,0.9);*/
@@ -52,23 +43,19 @@
   background-color: #e7a61a;
 }
 #topOfList {
-  color: #A3CE0C;
+  color: white;
   font-family: 'Poiret One', cursive;
-
 }
-
 #navMenu {
     line-height: 46px;
     margin-top: 15px;
     padding-right: 15px;
 }
-
 #navbar-collapse-3 {
     margin-left: 100px;
     margin-right: -45px;
     margin-top: 10px;
 }
-
 #navButtons {
     padding-left: 10px;
     padding-right: 10px;
@@ -77,7 +64,6 @@
     font-weight: 800;
     color: red;
 }
-
 #top {
     text-align: left;
     background: black;
@@ -87,10 +73,7 @@
     background-position: center right;
     background-size: 100% 500px;
     height:500px;
-    color: #A3CE0C;
 }
-
-
 #smallTop {
     text-align: left;
     background: black;
@@ -104,74 +87,50 @@
 #smallTop  h1 {
     font-size: .8em;
 }
-
-/*#stripe {
+#stripe {
     background-color: #FFFFFF ;
     height: 5px;
     margin-bottom: 20px
-}*/
-
+}
 #secondStripe {
     background-color: #696969;
     height: 5px;
     margin-bottom: 0px;
-    background-position: fixed;
 }
-
 #pitchFork {
     margin: 30px auto;
     height: 150px;
     width: 150px;
 }
-
 #searchButton {
     margin: 15px 0 50px 0;
     background-color: #e7a61a;
 }
-
-#topPic {
-    height: 100%;
-    width: 100px;
-    float: left;
-
-}
 #pic {
-    height: 100%;
-    width: 100px;
+    height: 100px;
     float: right;
-
 }
-
 #veggies {
   color: #FFFFFF;
   font-size: 32px;
 }
-
 #footer {
     max-height: 100px;
-    background-color: black;
-    margin-top: 60px;
-
+    background-color: #696969 ;
+    margin-top: 75px;
 }
-
 #footNav{
-    background-color: black;
-    border-top: 5px solid #696969;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+    background-color: #696969 ;
+    border-style: none;
 }
-
 a {
    color: #A3CE0C ;
    text-decoration: none;
    
 }
-
 li {
     list-style-type: none;
 }
-
 html, body {
    height: 100%;
 }
@@ -179,7 +138,6 @@ body {
    padding-top: 75px;
    background: black;
 }
-
 .mycolor{
            color : #72c02c ;
        }        
@@ -195,17 +153,13 @@ body {
            -moz-box-shadow:    0px 0px 3px 0px #72c02c ;
            box-shadow:         0px 0px 3px 0px #72c02c ;
        }
-
-
 .mybutton{
            position: relative;
            left: 50%;
            top: 193px;
-
        }
        .margin-bottom-20 {
            margin-bottom: 20px;
-
        }
        .btn-u:hover {
            background: #5fb611 ;
@@ -277,23 +231,17 @@ body {
            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
        }
-
 #vendorTable {
   color: #FFFFFF;
 }
-
 .table-hover tbody tr:hover td {
   background-color: #A3CE0C;
 }
-
 /**************************Prfile Page**********************/
 #userInfo {
   margin-top: 15px;
-
 }
-
 /**************************Vendor Form **********************/
-
 #vendorTable
 {
  -webkit-box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
@@ -307,15 +255,9 @@ body {
  -moz-box-shadow: 0px 0px 143px -39px rgba(88,214,81,1);
  box-shadow: 0px 0px 143px -39px rgba(88,214,81,1);
  height: 250px;
-
 }
 #vendor-heading {
  color: white;
  background: black;
  height: 250px;
 }
-
-
-
-
-
