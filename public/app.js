@@ -45,7 +45,7 @@ var RecipeForm = React.createClass({
             return (
               <div>
                   <form>
-                      <h1 id="topOfList">Find Your Food:</h1>
+                      <h1 id="topOfList">Find Your Recipe:</h1>
                       <input type="text" ref= "foodItem" className="" id="userText" placeholder="        Ingredients"/>
                     <div>
                       <button onClick={ this.handleSubmit } id="searchButton" className="btn btn-success">Get Recipes</button>

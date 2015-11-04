@@ -1,51 +1,42 @@
 var VendorList = React.createClass({
-  
-    render: function() {
-      var d = this.props.data
-      console.log(d);
-        var addVendor = this.props.data.map(function(vendor){
-            return (
-      
-        <tr>
-          <td>{vendor.vendorName}</td>
-          <td>{vendor.contactFirstname}</td>
-          <td>{vendor.contactLastName}</td>
-          <td>{vendor.address}</td>
-          <td>{vendor.veggies}</td>
-          <td>{vendor.fruits}</td>
-          <td>{vendor.meats}</td>
-          <td>{vendor.other}</td>
-        </tr>
-      
-            )
-        });
+ 
+   render: function() {
+     var d = this.props.data
+     console.log(d);
+       var addVendor = this.props.data.map(function(vendor){
+           return (
+                   <div>
+                       <div className="col-md-4" id="panel-vendor">
+                       <div className="panel panel-default">
+                           <div className="panel-heading" id="vendor-heading">
+                               <h6 className="panel-title">{vendor.vendorName}</h6>
+                               <p className="panel-title">{vendor.contactFirstName}  {vendor.contactLastName}</p>
+                               <p className="panel-title">{vendor.address}</p>
+                               <ul><strong>{vendor.produce}</strong>
+                                   <li>{vendor.veggies} </li>
+                                   <li>{vendor.fruits} </li>
+                                   <li>{vendor.meats} </li>
+                                   <li>{vendor.other} </li>
+                               </ul>
+                           </div>
+                       </div>
+                       </div>
+                   </div>
+           )
+       });
+           
+       return (
+         <div id="vendorList">
+          
+               
+               {addVendor}
         
-        return (
-          <div>
-           <table className="table table-hover" id="vendorList">
-    
-            <thead>
-              <tr>
-                <th>Vendor</th>
-                <th>Contact First Name</th>
-                <th>Contact Last Name</th>
-                <th>Address</th>
-                <th>Veggies</th>
-                <th>Fruits</th>
-                <th>Meats</th>
-                <th>Other</th>
-              </tr>
-            </thead>
-            <tbody>
-
-                {addVendor}
-            
-            </tbody>
-            </table>
-                </div>
-            );
-    }
+               </div>
+           );
+   }
 });
+
+//////////////
 
 
 var VendorBox = React.createClass({
