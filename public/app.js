@@ -1,8 +1,4 @@
-// RecipeBox
-//   RecipeSearchBar
-//   RecipeList = Returned Recipes from original search
-//     Recipe = The single recipe you want to get ingredients from
-//       RecipeIngredients = What is shown when interaction happens to Recipe
+
 
 var RecipeBox = React.createClass({
 
@@ -73,11 +69,10 @@ var RecipeList = React.createClass({
 
     return (
       <div>
-        <div className="col-md-12 text-center">
-            <ul>
+        
+            
              {recipeData} 
-            </ul>
-        </div>
+      
       </div>
       );
     }
@@ -116,7 +111,7 @@ var Recipe  = React.createClass({
       var text = this.state.liked ? 'Hide Ingredients' : 'Show Ingredients';
       return (
         <div>
-          <div className="col-md-6 col-sx-10 col-sm-8 col-lg-4 col-xs-offset-1" id="panel-spacing">
+          <div id="panel-spacing">
             <div className="panel panel-default" id="panel">
               <div className="panel-heading" id="panel-heading">
                 <h6 className="panel-title"><a href={this.props.r.source_url}> {this.props.r.title} </a></h6>
@@ -143,8 +138,17 @@ var RecipeIngredients  = React.createClass({
       var ingredientList = this.props.ingredientsData; 
          return !this.props.ingredientsDisplay ? <div/> : (
           <div>
-            {ingredientList}
-          </div>
+            <div className="col-md-10" id="ingreed">
+              <div className="panel panel-default" id="ingreedPanel">
+                <ul>
+                  <li>
+                    {ingredientList}
+                  </li>
+                </ul>
+            </div>
+          
+        </div>
+      </div>
         );
     }
 });
