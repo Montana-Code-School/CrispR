@@ -1,6 +1,6 @@
 // *******************************  Require Concepts Block **************** \\
 
-var express        = require('express'), 
+var express    = require('express'), 
 app            = express(),
 path           = require('path'),
 
@@ -21,7 +21,6 @@ Vendor 		   = require('./models/vendor'),
 
 vendorRoutes   = require('./routes/vendor'),
 recipeRoutes   = require('./routes/recipes')
-
 
 
 require('./config/passport')(passport); 
@@ -66,8 +65,8 @@ app.use('/api', vendorRoutes);
 
 app.use('/api', router);
 
-app.use('/api/recipes/:foodItem', recipeRoutes);
-// app.use('/api/ingredients/:recipeId', recipeRoutes.fetchIngredients);
+app.use('/api/recipes/:foodItem', recipeRoutes.fetchRecipes);
+app.use('/api/ingredients/:rId', recipeRoutes.fetchIngredients);
 
 
 
