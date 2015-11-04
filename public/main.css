@@ -72,40 +72,24 @@
     background-size: 100% 500px;
     height:500px;
 }
-#stripe {
-    background-color: #FFFFFF ;
-    height: 5px;
-    margin-bottom: 20px
-}
+
 #secondStripe {
     background-color: #696969;
     height: 5px;
     margin-bottom: 0px;
 }
-#pitchFork {
-    margin: 30px auto;
-    height: 150px;
-    width: 150px;
-}
+
 #searchButton {
     margin: 15px 0 50px 0;
     background-color: gray;
 }
-#pic {
+#carrotLogo {
     height: 100px;
     float: right;
 }
-#veggies {
-  color: #FFFFFF;
-  font-size: 32px;
-}
-#footer {
-    max-height: 100px;
-    background-color: #696969 ;
-    margin-top: 75px;
-}
+
 #footNav{
-    background-color: #696969 ;
+    background-color: black ;
     border-style: none;
 }
 a {
@@ -116,119 +100,110 @@ a {
 li {
     list-style-type: none;
 }
-html, body {
-   height: 100%;
-}
+
 body {    
    padding-top: 75px;
    background: black;
 }
-.mycolor{
+.mycolor {
            color : #72c02c ;
-       }        
-       .myborder{
-           padding: 20px;;
-           border: 1px solid #ccc;
-           font-family: 'Poiret One', cursive;
-           font-size: 18px;
-           color: #FFFFFF;
-           
-           border-radius: 4px;
-           -webkit-box-shadow: 0px 0px 3px 0px #72c02c ;
-           -moz-box-shadow:    0px 0px 3px 0px #72c02c ;
-           box-shadow:         0px 0px 3px 0px #72c02c ;
-       }
-.mybutton{
-           position: relative;
-           left: 50%;
-           top: 193px;
-       }
-       .margin-bottom-20 {
-           margin-bottom: 20px;
-       }
-       .btn-u:hover {
-           background: #5fb611 ;
-       }
-       .btn-u:hover, .btn-u:focus, .btn-u:active, .btn-u.active, .open .dropdown-toggle.btn-u {
-           background: #5fb611 ;
-       }
-       .btn-u:hover {
-           color: #fff;
-           text-decoration: none;
-           -webkit-transition: all 0.3s ease-in-out;
-           -moz-transition: all 0.3s ease-in-out;
-           -o-transition: all 0.3s ease-in-out;
-           transition: all 0.3s ease-in-out;
-       }
-       .btn-u {
-           background: #72c02c ;
-       }
-       .btn-u {
-           white-space: nowrap;
-           border: 0;
-           color: #fff;
-           font-size: 18px;
-           cursor: pointer;
-           font-weight: 400;
-           padding: 6px 13px;
-           position: relative;
-           background: #72c02c ;
-           display: inline-block;
-           text-decoration: none;
-       }
-       .input-group-addon {
-           border-right: 0;
-           /*color: #b3b3b3 ;*/
-           font-size: 18px;
-           background: #fff;
-           padding: 6px 12px;
-           font-size: 14px;
-           font-weight: 400;
-           line-height: 1;
-           color: #555;
-           text-align: center;
-           background-color: #eee;
-           border: 1px solid #ccc;
-           border-radius: 4px;
-       }
-       .input-group .form-control {
-           float: left;
-           width: 100%;
-           margin-bottom: 0;
-       }
-       .form-control {
-           box-shadow: none;
-       }
-       .form-control {
-           display: block;
-           width: 100%;
-           height: 34px !important;
-           padding: 6px 12px;
-           font-size: 14px;
-           line-height: 1.428571429;
-           color: #555;
-           background-color: #fff;
-           background-image: none;
-           border: 1px solid  #72c02c  !important;
-           border-radius: 4px;
-           -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-           box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-           -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-           transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-       }
-#vendorTable {
-  color: #FFFFFF;
+}        
+.myborder{
+   padding: 20px;;
+   border: 1px solid #ccc;
+   font-family: 'Poiret One', cursive;
+   font-size: 18px;
+   color: #FFFFFF;
+   border-radius: 4px;
+   -webkit-box-shadow: 0px 0px 3px 0px #72c02c ;
+   -moz-box-shadow:    0px 0px 3px 0px #72c02c ;
+   box-shadow:         0px 0px 3px 0px #72c02c ;
 }
-.table-hover tbody tr:hover td {
-  background-color: #A3CE0C;
+.mybutton {
+    position: relative;
+    left: 50%;
+    top: 193px;
 }
-/**************************Prfile Page**********************/
+.margin-bottom-20 {
+   margin-bottom: 20px;
+}
+.btn-u:hover {
+   background: #5fb611 ;
+}
+.btn-u:hover, .btn-u:focus, .btn-u:active, .btn-u.active, .open .dropdown-toggle.btn-u {
+   background: #5fb611 ;
+}
+.btn-u:hover {
+   color: #fff;
+   text-decoration: none;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+.btn-u {
+   background: #72c02c ;
+}
+.btn-u {
+   white-space: nowrap;
+   border: 0;
+   color: #fff;
+   font-size: 18px;
+   cursor: pointer;
+   font-weight: 400;
+   padding: 6px 13px;
+   position: relative;
+   background: #72c02c ;
+   display: inline-block;
+   text-decoration: none;
+}
+.input-group-addon {
+   border-right: 0;
+   font-size: 18px;
+   background: #fff;
+   padding: 6px 12px;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1;
+   color: #555;
+   text-align: center;
+   background-color: #eee;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+.input-group .form-control {
+   float: left;
+   width: 100%;
+   margin-bottom: 0;
+}
+.form-control {
+   box-shadow: none;
+}
+.form-control {
+   display: block;
+   width: 100%;
+   height: 34px !important;
+   padding: 6px 12px;
+   font-size: 14px;
+   line-height: 1.428571429;
+   color: #555;
+   background-color: #fff;
+   background-image: none;
+   border: 1px solid  #72c02c  !important;
+   border-radius: 4px;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/************************Prfile Page**********************/
 #userInfo {
   margin-top: 15px;
 }
 /**************************Vendor Form **********************/
-#vendorTable
-{
+#vendorTable {
+  color: #FFFFFF;
  -webkit-box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
  -moz-box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
  box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
