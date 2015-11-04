@@ -4,18 +4,18 @@
 .navbar-inverse {
     background-color: black;
     margin-bottom: 10px;
-/*    border-bottom: 5px solid #696969;*/
 }
 
 
 
 #brand {
-    color: #A3CE0C ;
-    font-size: 46px;
-    font-family: 'Poiret One', cursive;
-    line-height: 46px;
-    margin-bottom: 10px;
-}
+      color: #A3CE0C ;
+      font-size: 46px;
+      background-position: center right;
+      background-size: 100% 500px;
+      height:500px;
+  }
+
 #thumbnail {
   height: 200px;
   width: 200px;
