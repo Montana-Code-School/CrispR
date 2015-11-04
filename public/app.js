@@ -116,7 +116,7 @@ var Recipe  = React.createClass({
       var text = this.state.liked ? 'Hide Ingredients' : 'Show Ingredients';
       return (
         <div>
-          <div className="col-md-6 col-sx-10 col-sm-8 col-lg-4 col-xs-offset-1" id="panel-spacing">
+          <div className="col-md-6 col-sx-10 col-sm-8 col-lg-10 col-xs-offset-1" id="panel-spacing">
             <div className="panel panel-default" id="panel">
               <div className="panel-heading" id="panel-heading">
                 <h6 className="panel-title"><a href={this.props.r.source_url}> {this.props.r.title} </a></h6>
