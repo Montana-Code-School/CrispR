@@ -26,10 +26,13 @@ var RecipeBox = React.createClass({
     },
         render: function() {
             return (
-              <div>
+            <div>
+              
                 <RecipeSearchBar onRecipeSubmit={this.loadRecipesFromServer}/>
-                <RecipeList data={this.state.data}/>
-              </div>
+                  <RecipeList data={this.state.data}/>
+                    
+                  
+            </div>
             );
         }
     }); 
@@ -46,7 +49,7 @@ var RecipeSearchBar = React.createClass({
               <div>
                   <form>
                       <h1 id="topOfList">Find Your Food:</h1>
-                      <input type="text" ref= "foodItem" className="" id="userText" placeholder="        Ingredients"/>
+                      <input type="text" ref= "foodItem" className="" id="userText" placeholder="     Ingredients"/>
                     <div>
                       <button onClick={ this.handleSubmit } id="searchButton" className="btn btn-success">Get Recipes</button>
                     </div>
@@ -70,9 +73,9 @@ var RecipeList = React.createClass({
     return (
       <div>
         
-            
-             {recipeData} 
-      
+            {recipeData} 
+        
+        
       </div>
       );
     }
@@ -110,22 +113,15 @@ var Recipe  = React.createClass({
       // var self = this;
       var text = this.state.liked ? 'Hide Ingredients' : 'Show Ingredients';
       return (
+
         <div>
-          <div id="panel-spacing">
-            <div className="panel panel-default" id="panel">
-              <div className="panel-heading" id="panel-heading">
-                <h6 className="panel-title"><a href={this.props.r.source_url}> {this.props.r.title} </a></h6>
-              </div>
-              <div className="panel-body">
+          <h3><a href={this.props.r.source_url}> {this.props.r.title} </a></h3>
+            <li> <img src={this.props.r.image_url} id="thumbnail"/> </li>
               <div>
                 <button onClick= {this.loadIngredientsFromServer.bind(this, this.props.r.recipe_id)}
                   type="button" className="btn btn-default">{text}</button>
                 <button onClick= {this.handleClick} type="button" className="btn btn-default">{text}</button>
               </div>
-                <li> <img src={this.props.r.image_url} id="thumbnail"/> </li>
-              </div>
-            </div>
-          </div>
           <RecipeIngredients ingredientsData={this.state.ingredientsData} ingredientsDisplay={this.state.liked}/>
         </div>
       );
@@ -135,19 +131,21 @@ var Recipe  = React.createClass({
 var RecipeIngredients  = React.createClass({
 
     render: function() {
-      var ingredientList = this.props.ingredientsData; 
+      var ingredientList = this.props.ingredientsData.map(function(item){
+        return <li> {item} </li>
+      });
          return !this.props.ingredientsDisplay ? <div/> : (
           <div>
-            <div className="col-md-10" id="ingreed">
-              <div className="panel panel-default" id="ingreedPanel">
-                <ul>
-                  <li>
-                    {ingredientList}
-                  </li>
-                </ul>
-            </div>
+            
+              
+                <div id="ingreed">
+                <h3>Ingredients You Need</h3>
+                  {ingredientList}
+                </div>
+              
+            
+              
           
-        </div>
       </div>
         );
     }
