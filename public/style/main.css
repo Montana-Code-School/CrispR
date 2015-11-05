@@ -41,11 +41,11 @@
     transition: 1s ease-in-out;
 }
  #carrotLogo:hover {
-   -webkit-transform: rotate(720deg) scale(1);
-    -moz-transform: rotate(720deg) scale(1);
-    -o-transform: rotate(720deg) scale(1);
-    -ms-transform: rotate(720deg) scale(1);
-    transform: rotate(720deg) scale(1);
+   -webkit-transform: rotate(2880deg) scale(1);
+    -moz-transform: rotate(2880deg) scale(1);
+    -o-transform: rotate(2880deg) scale(1);
+    -ms-transform: rotate(2880deg) scale(1);
+    transform: rotate(2880deg) scale(1);
   }
 #pushingCarrot {
   margin-bottom: 250px;
@@ -69,7 +69,12 @@ body {
 #ingreed {
   color: pink;
   font-size: 15px;
-
+  text-align: left;
+}
+#vengreed {
+  color: grey;
+  font-size: 15px;
+  text-align: right;
 }
 #thumbnail {
   height: 200px;
@@ -84,12 +89,17 @@ body {
   color: white;
   font-family: 'Poiret One', cursive;
 }
-
+#ingredientsButton {
+  margin-top: 10px;
+  background-color: brown;
+  color: black;
+  font-size: 1.3em;
+}
 #top {
     text-align: left;
     background: black;
     font-family: 'Poiret One', cursive;
-    background-image: url("images/farmLandScape.png");
+    background-image: url("/images/farmLandScape.png");
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 100% 500px;
