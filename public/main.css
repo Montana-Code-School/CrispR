@@ -33,7 +33,8 @@
     height: 100px;
     float: right;
     margin-top: 50px;
-    margin-right: -100px;
+    margin-bottom: 5px;
+
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
@@ -46,7 +47,9 @@
     -ms-transform: rotate(720deg) scale(1);
     transform: rotate(720deg) scale(1);
   }
-
+#pushingCarrot {
+  margin-bottom: 250px;
+}
 
 a {
    color: tomato;
