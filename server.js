@@ -68,6 +68,10 @@ app.use('/api', router);
 app.use('/api/recipes/:foodItem', recipeRoutes.fetchRecipes);
 app.use('/api/ingredients/:rId', recipeRoutes.fetchIngredients);
 
+app.get('/vendor', function(req, res) {
+        res.render('vendorList.ejs');
+    });
+
 
 
 

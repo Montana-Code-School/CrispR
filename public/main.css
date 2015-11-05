@@ -33,17 +33,18 @@
     height: 100px;
     float: right;
     margin-top: 50px;
+    margin-right: -100px;
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
  #carrotLogo:hover {
-   -webkit-transform: rotate(360deg) scale(1);
-    -moz-transform: rotate(360deg) scale(1);
-    -o-transform: rotate(360deg) scale(1);
-    -ms-transform: rotate(360deg) scale(1);
-    transform: rotate(360deg) scale(1);
+   -webkit-transform: rotate(720deg) scale(1);
+    -moz-transform: rotate(720deg) scale(1);
+    -o-transform: rotate(720deg) scale(1);
+    -ms-transform: rotate(720deg) scale(1);
+    transform: rotate(720deg) scale(1);
   }
 
 

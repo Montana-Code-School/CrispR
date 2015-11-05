@@ -7,7 +7,6 @@ var VendorSchema = new Schema({
     contactFirstName: String,
     contactLastName: String,
     address: String,
-    produce: String,
     veggies: Array,
     fruits: Array,
     meats: Array,

@@ -30,7 +30,11 @@ router.route('/vendors')
       		if(err){
         	res.send("you have a problem");
       		}else{
-            res.send(vendor);
+            
+          return res.redirect('/vendor');
+
+          res.send(vendor);
+            
           }
     	});
   	})
