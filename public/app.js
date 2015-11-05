@@ -86,20 +86,21 @@ var Recipe  = React.createClass({
       return {liked: false, ingredientsData: []};
     },
 
-    handleClick: function(event) {
-      this.setState({liked: !this.state.liked});
-    },
+    // handleClick: function(event) {
+    //   this.setState({liked: !this.state.liked});
+    // },
 
     loadIngredientsFromServer: function(rId){
-      var url2="/api/ingredients/"
-      var rId = rId
+      var url2="/api/ingredients/";
+      var rId = rId;
         $.ajax({
           url: url2 + rId,
           dataType: 'json',
           cache: false,
           success:function(ingredientsData){
-            console.log("ingredient success")
+            console.log("ingredient success");
             this.setState({ingredientsData:ingredientsData});
+            this.setState({liked: !this.state.liked});
           }.bind(this),
           error: function(xhr, status, err){
             console.log("broken " + this.props.url)
@@ -120,7 +121,6 @@ var Recipe  = React.createClass({
               <div>
                 <button onClick= {this.loadIngredientsFromServer.bind(this, this.props.r.recipe_id)}
                   type="button" className="btn btn-default">{text}</button>
-                <button onClick= {this.handleClick} type="button" className="btn btn-default">{text}</button>
               </div>
           <RecipeIngredients ingredientsData={this.state.ingredientsData} ingredientsDisplay={this.state.liked}/>
         </div>
