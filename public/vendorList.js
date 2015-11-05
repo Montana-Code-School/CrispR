@@ -36,7 +36,7 @@ var VendorList = React.createClass({
    }
 });
 
-//////////////
+
 
 
 var VendorBox = React.createClass({

@@ -49,7 +49,7 @@ var RecipeSearchBar = React.createClass({
               <div>
                   <form>
                       <h1 id="topOfList">Find Your Food:</h1>
-                      <input type="text" ref= "foodItem" className="" id="userText" placeholder="     Ingredients"/>
+                      <input type="text" ref= "foodItem" className="" id="userText" placeholder="   Ingredients"/>
                     <div>
                       <button onClick={ this.handleSubmit } id="searchButton" className="btn btn-success">Get Recipes</button>
                     </div>
@@ -136,19 +136,14 @@ var RecipeIngredients  = React.createClass({
       });
          return !this.props.ingredientsDisplay ? <div/> : (
           <div>
-            
-              
-                <div id="ingreed">
-                <h3>Ingredients You Need</h3>
-                  {ingredientList}
-                </div>
-              
-            
-              
-          
-      </div>
+            <div id="ingreed">
+              <h3>Ingredients You Need</h3>
+                {ingredientList}
+            </div>
+          </div>
         );
     }
 });
+
 
 React.render(<RecipeBox url="/api/recipes/"/>, document.getElementById('searchBar'));
