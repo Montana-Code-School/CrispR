@@ -3,25 +3,42 @@ var VendorList = React.createClass({
    render: function() {
      var d = this.props.data
      console.log(d);
-       var addVendor = this.props.data.map(function(vendor){
+       var addVendor = this.props.data.map(function(vendor) {
            return (
-                   <div>
-                       <div className="col-md-4" id="panel-vendor">
-                       <div className="panel panel-default">
-                           <div className="panel-heading" id="vendor-heading">
-                               <h6 className="panel-title">{vendor.vendorName}</h6>
-                               <p className="panel-title">{vendor.contactFirstName}  {vendor.contactLastName}</p>
-                               <p className="panel-title">{vendor.address}</p>
-                               <ul><strong>{vendor.produce}</strong>
-                                   <li>{vendor.veggies} </li>
-                                   <li>{vendor.fruits} </li>
-                                   <li>{vendor.meats} </li>
-                                   <li>{vendor.other} </li>
-                               </ul>
-                           </div>
-                       </div>
-                       </div>
-                   </div>
+            <div>
+            <div class="container" id="vendorTable">
+
+            <div className="media col-md-3">
+                <a className="thumbnail pull-left" id="farmStand">
+                        <img src="images/farmStand.png" />
+                    </a>
+                </div>
+                <div className="col-md-3" id="vendorDetails">
+                      <h4>{vendor.vendorName}</h4>
+                      <h5>Contact Name: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
+                      <h5>City, State: {vendor.address}</h5>
+                </div>
+              
+                 <div className="col-md-1" id="produceColumns">
+                    <h4>Veggies</h4>
+                      <p>{vendor.veggies.join(' ')}</p>
+                  </div>
+                  <div className="col-md-1" id="produceColumns">
+                    <h4>Fruits</h4> 
+                      <p>{vendor.fruits.join(' ')}</p>
+                  </div>
+                  <div className="col-md-1" id="produceColumns">
+                    <h4>Meats</h4>
+                      <p>{vendor.meats.join(' ')}</p>   
+                  </div>
+                  <div className="col-md-1" id="produceColumns">
+                    <h4>Other</h4>
+                      <p>{vendor.other.join(' ')}</p> 
+                  </div>
+           
+            </div>
+            </div>
+
            )
        });
            
@@ -35,10 +52,7 @@ var VendorList = React.createClass({
            );
    }
 });
-
-
-
-
+//////////////
 var VendorBox = React.createClass({
     //Set initial state-----------------
     getInitialState: function(){
@@ -72,6 +86,4 @@ var VendorBox = React.createClass({
         );
     }
 });
-
-
-React.render(<VendorBox url="/api/vendors/"/>, document.getElementById("vendorTable"));
+React.render(<VendorBox url="/api/vendors/"/>, document.getElementById("vendorInfo"));

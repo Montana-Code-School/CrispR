@@ -27,9 +27,10 @@ var RecipeBox = React.createClass({
         render: function() {
             return (
             <div>
-              
                 <RecipeSearchBar onRecipeSubmit={this.loadRecipesFromServer}/>
+             
                   <RecipeList data={this.state.data}/>
+          
                     
                   
             </div>
@@ -86,9 +87,7 @@ var Recipe  = React.createClass({
       return {liked: false, ingredientsData: []};
     },
 
-    // handleClick: function(event) {
-    //   this.setState({liked: !this.state.liked});
-    // },
+  
 
     loadIngredientsFromServer: function(rId){
       var url2="/api/ingredients/";
