@@ -59,26 +59,7 @@ router.route('/vendors/:vendor_id')
     		}
     	})
     })
-// UPDATE EXISTING VENDOR BY ID
-    // .put(function(req, res) {
-    //     mongoose.model("Vendor").findById(req.params.vendor_id, function(err, vendor) {
-    //         if (err){
-    //           console.error(err);
-    //         }
-    //         vendorName: req.body.vendorName,
-    //         contactFirstName: req.body.contactFirstName,
-    //         contactLastName: req.body.contactLastName,
-    //         address: req.body.address,
-    //         product: req.body.product
-         
-    //         vendor.save(function(err) {
-    //             if (err)
-    //                 res.send(err);
-    //             res.json({ message:"Vendor updated!", vendor});
-    //         });
-    //   	});
-    //   })
-// DELETE VENDOR BY ID
+
     .delete(function(req, res) {
         mongoose.model("Vendor").remove({
             _id: req.params.vendor_id

@@ -3,33 +3,13 @@
     background-color: black;
     margin-bottom: 10px;
 }
+/******************************All Pages*******************************/
 #brand {
     color: #A3CE0C ;
     font-size: 46px;
     font-family: 'Poiret One', cursive;
     line-height: 46px;
     margin-bottom: 10px;
-}
-#ingreed {
-  color: pink;
-  font-size: 15px;
-
-}
-
-#thumbnail {
-  height: 200px;
-  width: 200px;
-}
-
-
-#userText {
-  border-radius: 7px;
-  background-color: white;
-  margin-bottom: 3px;
-}
-#topOfList {
-  color: white;
-  font-family: 'Poiret One', cursive;
 }
 #navMenu {
     line-height: 46px;
@@ -49,6 +29,46 @@
     font-weight: 800;
     
 }
+#carrotLogo {
+    height: 100px;
+    float: right;
+}
+
+
+a {
+   color: tomato;
+   text-decoration: none;
+   
+}
+li {
+    list-style-type: none;
+}
+
+body {    
+   padding-top: 75px;
+   background: black;
+}
+
+/******************************Get Recipes Stuff Home Page*******************************/
+#ingreed {
+  color: pink;
+  font-size: 15px;
+
+}
+#thumbnail {
+  height: 200px;
+  width: 200px;
+}
+#userText {
+  border-radius: 7px;
+  background-color: white;
+  margin-bottom: 3px;
+}
+#topOfList {
+  color: white;
+  font-family: 'Poiret One', cursive;
+}
+
 #top {
     text-align: left;
     background: black;
@@ -70,25 +90,7 @@
     background-color: gray;
     margin-bottom: 180px;
 }
-#carrotLogo {
-    height: 100px;
-    float: right;
-}
-
-
-a {
-   color: tomato;
-   text-decoration: none;
-   
-}
-li {
-    list-style-type: none;
-}
-
-body {    
-   padding-top: 75px;
-   background: black;
-}
+/******************************Vendor Profile*******************************/
 .mycolor {
            color : #72c02c ;
 }        
@@ -181,11 +183,8 @@ body {
    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-/************************Prfile Page**********************/
-#userInfo {
-  margin-top: 15px;
-}
-/**************************Vendor Form **********************/
+
+/**************************Vendor Form with all Vendors **********************/
 #vendorTable {
   color: #FFFFFF;
  -webkit-box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
