@@ -34,24 +34,24 @@
     float: right;
     margin-top: 50px;
     margin-bottom: 5px;
-    -webkit-transition: 2s ease-in-out;
-    -moz-transition: 2s ease-in-out;
-    -o-transition: 2s ease-in-out;
-    transition: 2s ease-in-out;    
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;    
 }
 #carrotJump {
-    -webkit-transition: 2s ease-in-out;
-    -moz-transition: 2s ease-in-out;
-    -o-transition: 2s ease-in-out;
-    transition: 2s ease-in-out;
+    -webkit-transition: .7s ease-in-out;
+    -moz-transition: .7s ease-in-out;
+    -o-transition: .7s ease-in-out;
+    transition: .7s ease-in-out;
 
 }
  #carrotLogo:hover {
-    -webkit-transform: rotate(2880deg) scale(1);
-    -moz-transform: rotate(2880deg) scale(1);
-    -o-transform: rotate(2880deg) scale(1);
-    -ms-transform: rotate(2880deg) scale(1);
-    transform: rotate(2880deg) scale(1);
+    -webkit-transform: rotate(1440deg) scale(1);
+    -moz-transform: rotate(1440deg) scale(1);
+    -o-transform: rotate(1440deg) scale(1);
+    -ms-transform: rotate(1440deg) scale(1);
+    transform: rotate(1440deg) scale(1);
   }
 #carrotJump:hover {
     -webkit-transform: translate(-1000px,0px);
@@ -80,29 +80,36 @@ body {
 }
 
 /******************************Get Recipes Stuff Home Page*******************************/
+
+#returnedStuff {
+  border: solid white 1px;
+  margin-top: 9px;
+  background-color: #202020;
+  margin-top: 13px;
+
+}
+
 #ingreed {
   margin-top: 20px;
   color: #E94F64;
-  font-size: 15px;
+  font-size: 1.2em;
   text-align: justify;
 }
 #vengreed {
   margin-top: 20px;
   color: #44DCDE;
-  font-size: 15px;
+  font-size: 1.2em;
   text-align: justify;
 }
 .returnTitles{
-  font-size: 32px;
+  font-size: 1.6em;
   font-weight: bold;
   text-decoration: underline;
 }
-.lists {
-  font-size: 1.2em;
-}
+
 #thumbnail {
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 }
 #userText {
   border-radius: 7px;

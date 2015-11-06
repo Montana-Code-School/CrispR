@@ -50,13 +50,13 @@ var RecipeIngredients  = React.createClass({
         return <p> {item} </p>
       });
          return !this.props.ingredientsDisplay ? <div/> : (
-          <div>
+          <div className="col-sm-12" id="returnedStuff">
             
-            <div className="col-sm-4 col-sm-offset-1"id="ingreed">
+            <div className="col-sm-5 col-sm-offset-1"id="ingreed">
               <h3 className="returnTitles">Ingredients You Need</h3>
                 {ingredientList}
             </div>    
-            <div className="col-sm-4 col-sm-offset-1" id="vengreed">
+            <div className="col-sm-5 col-sm-offset-1" id="vengreed">
             <h3 className="returnTitles">Vendors to Visit</h3>
                 <p> Larrys Lettuce Ranch</p>
                   <ul className="lists">
