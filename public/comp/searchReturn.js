@@ -47,20 +47,31 @@ var RecipeIngredients  = React.createClass({
 
     render: function() {
       var ingredientList = this.props.ingredientsData.map(function(item){
-        return <li> {item} </li>
+        return <p> {item} </p>
       });
          return !this.props.ingredientsDisplay ? <div/> : (
           <div>
             
             <div className="col-sm-4 col-sm-offset-1"id="ingreed">
-              <h3>Ingredients You Need</h3>
+              <h3 className="returnTitles">Ingredients You Need</h3>
                 {ingredientList}
             </div>    
             <div className="col-sm-4 col-sm-offset-1" id="vengreed">
-            <h3>Vendors to Visit</h3>
-                <p> Best Beet Farm </p>
+            <h3 className="returnTitles">Vendors to Visit</h3>
+                <p> Larrys Lettuce Ranch</p>
+                  <ul className="lists">
+                      <li>Lettuce</li>
+                  </ul>
                 <p> Meatville USA </p>
-                <p> Fruity Fruits </p>
+                  <ul className="lists">
+                      <li>Turkey</li>
+                  </ul>
+                <p> Vegelicious</p>
+                  <ul className="lists">
+                      <li>Cucumber</li>
+                      <li>Carrot</li>
+                      <li>Avocado</li>
+                  </ul>
 
             </div>  
           </div>

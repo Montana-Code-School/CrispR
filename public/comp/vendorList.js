@@ -9,30 +9,30 @@ var VendorList = React.createClass({
             <div class="container" id="vendorTable">
 
             <div className="media col-md-3">
-                <a className="thumbnail pull-left" id="farmStand">
-                        <img src="images/farmStand.png" />
+                <a className="thumbnail" id="farmStand">
+                        <img src="images/farmFork.png" />
                     </a>
                 </div>
                 <div className="col-md-3" id="vendorDetails">
-                      <h4>{vendor.vendorName}</h4>
+                      <h4 id="vendorName">{vendor.vendorName}</h4>
                       <h5>Contact Name: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
                       <h5>City, State: {vendor.address}</h5>
                 </div>
               
                  <div className="col-md-1" id="produceColumns">
-                    <h4>Veggies</h4>
+                    <h4 id="vendorName">Veggies</h4>
                       <p>{vendor.veggies.join(' ')}</p>
                   </div>
                   <div className="col-md-1" id="produceColumns">
-                    <h4>Fruits</h4> 
+                    <h4 id="vendorName">Fruits</h4> 
                       <p>{vendor.fruits.join(' ')}</p>
                   </div>
                   <div className="col-md-1" id="produceColumns">
-                    <h4>Meats</h4>
+                    <h4 id="vendorName">Meats</h4>
                       <p>{vendor.meats.join(' ')}</p>   
                   </div>
                   <div className="col-md-1" id="produceColumns">
-                    <h4>Other</h4>
+                    <h4 id="vendorName">Other</h4>
                       <p>{vendor.other.join(' ')}</p> 
                   </div>
            
