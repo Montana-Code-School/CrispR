@@ -186,13 +186,13 @@
    </div>
      </div>
 
-     <div class="row" id="userInfo">
+     <div class="row">
   <div class="col-sm-4 col-sm-offset-1" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="well">
-      <h3><span class="fa fa-user"></span>  Hello Vendor</h3>
+    <div class="well" id="userInfo">
+      <h3><span class="fa fa-user"></span>  You are logged in as:</h3>
         <p>
-          <strong>id</strong>: <%= user._id %><br>
-          <strong>email</strong>: <%= user.local.email %><br>
+          <!-- <strong>id</strong>: <%= user._id %><br> -->
+          <%= user.local.email %><br>
           <!-- <strong>password</strong>: --> <!-- <%= user.local.password %> -->
         </p>
     </div>

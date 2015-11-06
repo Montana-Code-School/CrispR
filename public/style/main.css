@@ -44,7 +44,6 @@
     -moz-transition: .7s ease-in-out;
     -o-transition: .7s ease-in-out;
     transition: .7s ease-in-out;
-
 }
  #carrotLogo:hover {
     -webkit-transform: rotate(1440deg) scale(1);
@@ -240,7 +239,8 @@ body {
    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 #userInfo {
-  margin-top: 15px;
+  margin-top: 30px;
+  background-color: lightgrey;
 }
 
 /**************************Vendor Form with all Vendors **********************/
