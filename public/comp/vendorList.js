@@ -1,9 +1,28 @@
+ // var VegList = React.createClass({
+ //    render: function() {
+
+ // var addVeg = this.props.map(function(veg) {
+ //        for (var i = 0; i < veg.veggies; i++) {
+ //          addVeg.push(<span className="badge badge-success">{veg.veggies}</span>);
+ //        });
+ //        return (
+ //          <div>
+ //          {addVeg}
+ //          </div>
+ //          );
+ //        }
+ //      }
+ //    });
+
+
 var VendorList = React.createClass({
- 
+
    render: function() {
      var d = this.props.data
      console.log(d);
+
        var addVendor = this.props.data.map(function(vendor) {
+          
            return (
             <div>
             <div class="container" id="vendorTable">
@@ -15,7 +34,7 @@ var VendorList = React.createClass({
                 </div>
                 <div className="col-md-3" id="vendorDetails">
                       <h4 id="vendorName">{vendor.vendorName}</h4>
-                      <h5>Contact Name: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
+                      <h5>Contact: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
                       <h5>City, State: {vendor.address}</h5>
                 </div>
               
@@ -44,7 +63,6 @@ var VendorList = React.createClass({
            
        return (
          <div id="vendorList">
-          
                
                {addVendor}
         

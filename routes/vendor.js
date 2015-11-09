@@ -64,6 +64,8 @@ router.route('/vendors/:vendor_id')
     	})
     })
 
+
+
     .delete(function(req, res) {
         mongoose.model("Vendor").remove({
             _id: req.params.vendor_id

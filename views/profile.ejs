@@ -91,7 +91,7 @@
             <div>
                 <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Corn"/> Corn</div>
             <div>
-                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Grean Beans"/> Green Beans</div>
+                <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Green Beans"/> Green Beans</div>
             <div>
                 <input type="checkbox" name="veggies[]" id="veggies" ref="veggieTypes" value="Kale"/> Kale</div>
             <div>   
@@ -186,10 +186,12 @@
    </div>
      </div>
 
-     <div class="row">
-  <div class="col-sm-4 col-sm-offset-1" style="margin-top: 20px; margin-bottom: 20px;">
-    <div class="well" id="userInfo">
-      <h3><span class="fa fa-user"></span>  You are logged in as:</h3>
+<!-- ************************VENDOR LOGIN INFO *************************************-->
+
+<div class="container-fluid">
+  <div class="col-sm-4 col-sm-offset-1 userInfo" style="float: left;">
+    <div class="well userInfo">
+      <h4><span class="fa fa-user"></span>  You are logged in as:</h4>
         <p>
           <!-- <strong>id</strong>: <%= user._id %><br> -->
           <%= user.local.email %><br>
@@ -197,7 +199,9 @@
         </p>
     </div>
   </div>
-</div>
+</div>     
+
+ 
 
 <!-- START FOOTER -->
 
