@@ -25,34 +25,34 @@ var VendorList = React.createClass({
           
            return (
             <div>
-            <div class="container" id="vendorTable">
+            <div class="container-fluid" id="vendorTable">
 
-            <div className="media col-md-3">
+            <div className="media col-md-3 col-sm-4 col-xs-6">
                 <a className="thumbnail" id="farmStand">
                         <img src="images/farmFork.png" />
                     </a>
                 </div>
-                <div className="col-md-3" id="vendorDetails">
+                <div className="col-xs-4 col-md-3 col-sm-8" id="vendorDetails">
                       <h4 id="vendorName">{vendor.vendorName}</h4>
                       <h5>Contact: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
                       <h5>City, State: {vendor.address}</h5>
                 </div>
               
-                 <div className="col-md-1" id="produceColumns">
+                 <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
                     <h4 id="vendorName">Veggies</h4>
                       <p>{vendor.veggies.join(' ')}</p>
                   </div>
-                  <div className="col-md-1" id="produceColumns">
+                  <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
                     <h4 id="vendorName">Fruits</h4> 
                       <p>{vendor.fruits.join(' ')}</p>
                   </div>
-                  <div className="col-md-1" id="produceColumns">
+                  <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
                     <h4 id="vendorName">Meats</h4>
                       <p>{vendor.meats.join(' ')}</p>   
                   </div>
-                  <div className="col-md-1" id="produceColumns">
+                  <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
                     <h4 id="vendorName">Other</h4>
-                      <p>{vendor.other.join(' ')}</p> 
+                      <p id="other">{vendor.other.join(' ')}</p> 
                   </div>
            
             </div>

@@ -63,6 +63,9 @@
 #pushingCarrot {
   margin-bottom: 250px;
 }
+.picRow{
+  margin-top: 25px;
+}
 
 .number {
   margin-left: 130px;
@@ -78,7 +81,7 @@
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
-  color: #56AC20;
+  color: black;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
@@ -268,7 +271,7 @@ body {
 
 /**************************Vendor Form with all Vendors **********************/
 #vendorTable {
-  height: 300px;
+  height: 25%;
   width: 100%;
   border: 5px solid #696969;
   border-radius: 5px;
@@ -278,13 +281,14 @@ body {
   background-color: #D4D4DE;
   }
 #farmStand {
-  margin-top:45px;
+  margin-top:30px;
   margin-left: 15px;
   height: 200px;
   width:200px;
 }
 #vendorDetails {
-  margin-top: 30px;
+  margin-top: 20px;
+  height: 200px;
   color: #black;
 }
 
@@ -292,22 +296,22 @@ body {
   color: black;
   text-decoration: underline;
 }
-#vendorInfo {
-
-/*  -webkit-box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
- -moz-box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);
- box-shadow: 3px 2px 15px 19px rgba(61,10,61,0.61);*/
+#other {
+  margin-bottom: 30px;
 }
+
 #produceDetails {
   margin-top: 30px;
   margin-left: 30px;
   height: 300px;
   width: 500px;
 }
-#produceColumns{
- margin-top: 30px;
+.produceColumns{
+ margin-top: 20px;
  margin-right: 20px;
  margin-left: 20px;
+ margin-bottom: 20px;
+ height: 200px;
  text-align: left;
  color: black;
 }
