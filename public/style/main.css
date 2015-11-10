@@ -32,7 +32,7 @@
 #carrotLogo {
     height: 100px;
     float: right;
-    margin-top: 150px;
+    margin-top: 75px;
     margin-bottom: 5px;
     -webkit-transition: .7s ease-in-out;
     -moz-transition: .7s ease-in-out;
@@ -65,18 +65,17 @@
 }
 .picRow{
   margin-top: 25px;
+
 }
 
 .number {
-  margin-left: 130px;
+  margin-left: center;
   margin-bottom: 25px;
   vertical-align: center;
   text-align: center;
+ 
 }
 
-#number3{
-  margin-top: 7px;
-}
 .instructions{
   text-align: center;
   margin-left: 15px;
@@ -86,8 +85,17 @@
   font-weight: bold;
 }
 
+#instructions {
+  display: inline;
+  margin: auto;
+  text-align: center;
+}
+.instructions {
+  color: white;
+}
+
 a {
-   color: tomato;
+   color: #CCC;
    text-decoration: none;
    
 }
@@ -110,7 +118,7 @@ body {
 }
 #ingreed {
   margin: 20px 20px;
-  color: #E94F64;
+  color: #CCC;
   font-size: 1.2em;
   text-align: justify; 
   border: 1px solid white;
@@ -158,8 +166,8 @@ body {
 }
 #ingredientsButton {
   margin: 10px 0px;
-  background-color: white;
-  color: black;
+  background-color: #641511;
+  color: #CCC;
   font-size: 1.3em;
 
 }
@@ -189,12 +197,7 @@ body {
     background-color: gray;
     margin-bottom: 180px;
 }
-#instructions {
-  display: inline;
-}
-.instructions {
-  color: white;
-}
+
 /******************************Vendor Profile*******************************/
 .mycolor {
            color : #72c02c ;
@@ -203,8 +206,9 @@ body {
    padding: 20px;;
    border: 1px solid #ccc;
    font-family: 'Poiret One', cursive;
+   background-color: #641511;
    font-size: 18px;
-   color: #FFFFFF;
+   color: #CCC;
    border-radius: 4px;
    -webkit-box-shadow: 0px 0px 3px 0px #56AC20 ;
    -moz-box-shadow:    0px 0px 3px 0px #56AC20 ;
@@ -305,7 +309,9 @@ body {
   float: left;
   margin-bottom: 25px;
   margin-top: 20px;
-  background-color: #696969;
+  background-color: #641511;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
   }
 #farmStand {
   margin-top:30px;
@@ -316,12 +322,16 @@ body {
 #vendorDetails {
   margin-top: 20px;
   height: 200px;
-  color: black;
+  color: #CCC;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 #vendorName {
-  color: black;
+  color: #CCC;
   text-decoration: underline;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 #other {
   margin-bottom: 30px;
@@ -340,11 +350,17 @@ body {
  margin-bottom: 20px;
  height: 200px;
  text-align: left;
- color: black;
+ color: #CCC;
+ font-size: 1.2em;
+ font-weight: bold;
 }
 #produceList{
   text-align: left;
   margin-right: 20px;
+}
+
+.badge-important { 
+  background-color: #f89406; 
 }
 
 

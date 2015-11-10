@@ -32,8 +32,9 @@ var VendorList = React.createClass({
                       <p>{vendor.fruits.join(' ')}</p>
                   </div>
                   <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
-                    <h4 id="vendorName">Meats</h4>
-                      <p>{vendor.meats.join(' ')}</p>   
+                    <h4 id="vendorName">Meats</h4> 
+                      <p>{vendor.meats.join(' ')}</p>
+
                   </div>
                   <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
                     <h4 id="vendorName">Other</h4>
