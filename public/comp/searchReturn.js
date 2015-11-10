@@ -55,23 +55,6 @@ var RecipeIngredients  = React.createClass({
             <div className="col-sm-5 col-sm-offset-1"id="ingreed">
               <h3 className="returnTitles">Ingredients You Need</h3>
                 {ingredientList}
-            </div>    
-            <div className="col-sm-5 col-sm-offset-1" id="vengreed">
-            <h3 className="returnTitles">Vendors to Visit</h3>
-                <p> Larrys Lettuce Ranch</p>
-                  <ul className="lists">
-                      <li>Lettuce</li>
-                  </ul>
-                <p> Meatville USA </p>
-                  <ul className="lists">
-                      <li>Turkey</li>
-                  </ul>
-                <p> Vegelicious</p>
-                  <ul className="lists">
-                      <li>Cucumber</li>
-                      <li>Carrot</li>
-                      <li>Avocado</li>
-                  </ul>
 
             </div>  
           </div>

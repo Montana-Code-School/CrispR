@@ -6,9 +6,9 @@ path           = require('path'),
 
 bodyParser     = require('body-parser'),
 axios          = require('axios'),
-mongoose 	   = require('mongoose'),
-passport 	   = require('passport'),
-flash    	   = require('connect-flash'),
+mongoose        = require('mongoose'),
+passport        = require('passport'),
+flash           = require('connect-flash'),
 morgan         = require('morgan'),
 cookieParser   = require('cookie-parser'),
 bodyParser     = require('body-parser'),
@@ -17,13 +17,13 @@ session        = require('express-session'),
 db             = require('./models/db'),
 blogModel      = require('./models/user'),
 router         = express.Router(),
-Vendor 		   = require('./models/vendor'),
+Vendor            = require('./models/vendor'),
 
 vendorRoutes   = require('./routes/vendor'),
 recipeRoutes   = require('./routes/recipes')
 
 
-require('./config/passport')(passport); 
+require('./config/passport')(passport);
 
 // *******************************  Concepts block end **************** \\
 
@@ -32,8 +32,7 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
-// mongoose.connect('mongodb://localhost/Crispr'); 
-
+// mongoose.connect('mongodb://localhost/Crispr');
 
 
 app.set('port', process.env.PORT || 4000);
@@ -52,13 +51,13 @@ app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 
-require('./routes/userRoutes')(app, passport); 
+require('./routes/userRoutes')(app, passport);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 var server = app.listen(app.get('port'), function(){ 
-	console.log('Express server listening on port ' + server.address().port)
+    console.log('Express server listening on port ' + server.address().port)
 });
 
 app.use('/api', vendorRoutes);
@@ -66,12 +65,9 @@ app.use('/api', vendorRoutes);
 app.use('/api', router);
 
 app.use('/api/recipes/:foodItem', recipeRoutes.fetchRecipes);
+app.use('/api/', vendorRoutes);
 app.use('/api/ingredients/:rId', recipeRoutes.fetchIngredients);
 
 app.get('/vendor', function(req, res) {
-        res.render('vendorList.ejs');
-    });
-
-
-
-
+       res.render('vendorList.ejs');
+   });
