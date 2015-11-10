@@ -1,18 +1,3 @@
- // var VegList = React.createClass({
- //    render: function() {
-
- // var addVeg = this.props.map(function(veg) {
- //        for (var i = 0; i < veg.veggies; i++) {
- //          addVeg.push(<span className="badge badge-success">{veg.veggies}</span>);
- //        });
- //        return (
- //          <div>
- //          {addVeg}
- //          </div>
- //          );
- //        }
- //      }
- //    });
 
 
 var VendorList = React.createClass({

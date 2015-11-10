@@ -89,7 +89,7 @@ var RecipeList = React.createClass({
    })
 
    return (
-     <div className="col-sm-12">
+     <div className="col-sm-5">
        
            {recipeData} 
        
@@ -102,7 +102,8 @@ var RecipeList = React.createClass({
 var VendorList = React.createClass({
  render: function(){
       var vendorListItems = this.props.data.map(function(item){
-           return ( <ul><h4> {item.vendorName} </h4>
+           return ( <ul><h3 className="returnTitles">Vendor</h3>
+                    <h4> {item.vendorName} </h4>
                     <li> {item.meats.join(', ')} </li> 
                     <li> {item.fruits.join(', ')} </li> 
                     <li> {item.veggies.join(', ')} </li></ul> 
@@ -112,8 +113,7 @@ var VendorList = React.createClass({
      });
        return (
      <div>
-       <div className="col-sm-5 col-sm-offset-5" id="vengreed">
-         <h3 className="returnTitles">Vendors to Visit</h3>
+       <div className="col-sm-5 col-sm-offset-6" id="vengreed">
            {vendorListItems}
        </div>
      </div>

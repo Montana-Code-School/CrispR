@@ -32,7 +32,7 @@
 #carrotLogo {
     height: 100px;
     float: right;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 5px;
     -webkit-transition: .7s ease-in-out;
     -moz-transition: .7s ease-in-out;
@@ -53,11 +53,11 @@
     transform: rotate(1440deg) scale(1);
   }
 #carrotJump:hover {
-    -webkit-transform: translate(-1000px,0px);
-    -moz-transform: translate(-1000px,0px);
-    -o-transform: translate(-1000px,0px);
-    -ms-transform: translate(-1000px,0px);
-    transform: translate(-1000px, 0px);
+    -webkit-transform: translate(-95%,0px);
+    -moz-transform: translate(-95%,0px);
+    -o-transform: translate(-95%,0px);
+    -ms-transform: translate(-95%,0px);
+    transform: translate(-95%, 0px);
 
 }
 #pushingCarrot {
@@ -117,6 +117,7 @@ body {
   text-align: justify;
 }
 #vengreed {
+  position: absolute;
   margin-top: 20px;
   color: #44DCDE;
   font-size: 1.2em;
