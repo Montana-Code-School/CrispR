@@ -5,7 +5,7 @@ var RecipeBox = React.createClass({
  },
 
    loadRecipesFromServer: function(recipe){
-     var recipe = recipe.foodItem;
+     var recipe = recipe.newFoodItem;
      console.log(this.state),
      $.ajax({
        url: this.props.url + recipe,
@@ -24,7 +24,7 @@ var RecipeBox = React.createClass({
    },
 
 loadVendorsFromServer: function(recipe){
-         var food = recipe.foodItem;
+         var food = recipe.newFoodItem;
        $.ajax({
            url:"/api/vendors/item/" + food,
            dataType:"json",
@@ -58,8 +58,9 @@ var RecipeSearchBar = React.createClass({
  handleSubmit: function(e){
    e.preventDefault();
    var foodItem = React.findDOMNode(this.refs.foodItem).value.trim();
-   this.props.onRecipeSubmit({foodItem:foodItem});
-   this.props.onVendorSubmit({foodItem:foodItem});
+   var newFoodItem = foodItem.charAt(0).toUpperCase() + foodItem.slice(1);
+   this.props.onRecipeSubmit({newFoodItem:newFoodItem});
+   this.props.onVendorSubmit({newFoodItem:newFoodItem});
    console.log(foodItem)
  },
        render: function() {
@@ -82,7 +83,7 @@ var RecipeList = React.createClass({
  render: function() {
    var recipeData = this.props.data.map(function(r) { 
      return ( 
-       <div>
+       <div id="recipeWrapper">
          <Recipe r={r}/>
        </div>
      ); 
@@ -102,7 +103,7 @@ var RecipeList = React.createClass({
 var VendorList = React.createClass({
  render: function(){
       var vendorListItems = this.props.data.map(function(item){
-           return ( <ul><h3 className="returnTitles">Vendor</h3>
+           return ( <ul id="vendorItems"><h3 className="returnTitles">Vendor</h3>
                     <h4> {item.vendorName} </h4>
                     <li> {item.meats.join(', ')} </li> 
                     <li> {item.fruits.join(', ')} </li> 

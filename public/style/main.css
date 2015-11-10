@@ -102,33 +102,50 @@ body {
 
 /******************************Get Recipes Stuff Home Page*******************************/
 
-
-
+#recipeWrapper {
+ /* border: 1px solid white;
+  border-radius: 5px;*/
+  margin: 41px 0px 42px 102px;
+  /*background-color: #555;*/
+}
 #ingreed {
-  margin-top: 20px;
+  margin: 20px 20px;
   color: #E94F64;
   font-size: 1.2em;
-  text-align: justify;
+  text-align: justify; 
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #555555;
 }
 #vengreed {
-  position: absolute;
+  position: absolute; 
   margin-top: 20px;
-  color: #44DCDE;
+  color: #CCC;
   font-size: 1.2em;
   text-align: justify;
+  height: 25%;
+}
+#vendorItems {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  float: left;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  background-color: #641511;
+  padding-bottom: 25px;
 
 }
 .returnTitles{
   font-size: 1.6em;
   font-weight: bold;
   text-decoration: underline;
-  margin-top: 50px;
+  margin-top: 25px;
 
 }
-
 #thumbnail {
-  height: 300px;
-  width: 300px;
+  height: 50%;
+  width: 50%;
 }
 #userText {
   border-radius: 7px;
@@ -140,10 +157,11 @@ body {
   font-family: 'Poiret One', cursive;
 }
 #ingredientsButton {
-  margin-top: 10px;
-  background-color: tomato;
+  margin: 10px 0px;
+  background-color: white;
   color: black;
   font-size: 1.3em;
+
 }
 #top {
     text-align: left;
@@ -170,6 +188,12 @@ body {
 #searchButton {
     background-color: gray;
     margin-bottom: 180px;
+}
+#instructions {
+  display: inline;
+}
+.instructions {
+  color: white;
 }
 /******************************Vendor Profile*******************************/
 .mycolor {
