@@ -25,7 +25,7 @@ var VendorList = React.createClass({
           
            return (
             <div>
-            <div class="container-fluid" id="vendorTable">
+            <div className="container-fluid" id="vendorTable">
 
             <div className="media col-md-3 col-sm-4 col-xs-6">
                 <a className="thumbnail" id="farmStand">

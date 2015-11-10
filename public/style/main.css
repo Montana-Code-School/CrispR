@@ -164,6 +164,11 @@ body {
     margin-bottom: 0px;
 }
 
+#secondStripe {
+    background-color: #696969;
+    height: 5px;
+    margin-bottom: 0px;
+}
 #searchButton {
     background-color: gray;
     margin-bottom: 180px;
@@ -273,12 +278,12 @@ body {
 #vendorTable {
   height: 25%;
   width: 100%;
-  border: 5px solid #696969;
+  border: 5px solid white;
   border-radius: 5px;
   float: left;
   margin-bottom: 25px;
   margin-top: 20px;
-  background-color: #D4D4DE;
+  background-color: #696969;
   }
 #farmStand {
   margin-top:30px;
@@ -289,7 +294,7 @@ body {
 #vendorDetails {
   margin-top: 20px;
   height: 200px;
-  color: #black;
+  color: black;
 }
 
 #vendorName {
