@@ -102,13 +102,7 @@ body {
 
 /******************************Get Recipes Stuff Home Page*******************************/
 
-#returnedStuff {
-  border: solid white 1px;
-  margin-top: 9px;
-  background-color: #202020;
-  margin-top: 13px;
 
-}
 
 #ingreed {
   margin-top: 20px;
@@ -122,11 +116,14 @@ body {
   color: #44DCDE;
   font-size: 1.2em;
   text-align: justify;
+
 }
 .returnTitles{
   font-size: 1.6em;
   font-weight: bold;
   text-decoration: underline;
+  margin-top: 50px;
+
 }
 
 #thumbnail {
