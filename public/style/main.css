@@ -46,11 +46,11 @@
     transition: .7s ease-in-out;
 }
  #carrotLogo:hover {
-    -webkit-transform: rotate(1440deg) scale(1);
-    -moz-transform: rotate(1440deg) scale(1);
-    -o-transform: rotate(1440deg) scale(1);
-    -ms-transform: rotate(1440deg) scale(1);
-    transform: rotate(1440deg) scale(1);
+    -webkit-transform: rotate(1440deg) scale(0);
+    -moz-transform: rotate(1440deg) scale(0);
+    -o-transform: rotate(1440deg) scale(0);
+    -ms-transform: rotate(1440deg) scale(0);
+    transform: rotate(1440deg) scale(0);
   }
 #carrotJump:hover {
     -webkit-transform: translate(-95%,0px);
@@ -73,7 +73,25 @@
   margin-bottom: 25px;
   vertical-align: center;
   text-align: center;
- 
+  
+}
+.number1 {
+  transition: transform 1s; 
+}
+.number1:hover {
+  transform: rotateY(360deg);
+}
+.number2 {
+  transition: transform 1s; 
+}
+.number2:hover {
+  transform: rotateX(360deg);
+}
+.number3 {
+  transition: transform 1s; 
+}
+.number3:hover {
+  transform: rotateY(360deg);
 }
 
 .instructions{
