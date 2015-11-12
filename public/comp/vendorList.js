@@ -15,8 +15,8 @@ var VendorList = React.createClass({
 
             <div className="col-xs-4 col-md-3 col-sm-8" id="vendorDetails">
               <h4 id="vendorName">{vendor.vendorName}</h4>
-              <h5>Contact: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
-              <h5>City, State: {vendor.address}</h5>
+              <h5 className="produceColumns">Contact: {vendor.contactFirstName + ' ' + vendor.contactLastName}</h5>
+              <h5 className="produceColumns">City, State: {vendor.address}</h5>
             </div>
           
             <div className="col-md-1 col-sm-1 col-xs-3 produceColumns">
