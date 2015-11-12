@@ -22,7 +22,8 @@ router.route('/vendors')
        veggies: req.body.veggies,
        fruits: req.body.fruits,
        meats: req.body.meats,
-       other: req.body.other
+       other: req.body.other,
+       img: req.body.img
        
      }
 

@@ -14,7 +14,7 @@ var VendorList = React.createClass({
 
             <div className="media col-md-3 col-sm-4 col-xs-6">
                 <a className="thumbnail" id="farmStand">
-                        <img src="images/farmFork.png" />
+                        <img src={vendor.img} />
                     </a>
                 </div>
                 <div className="col-xs-4 col-md-3 col-sm-8" id="vendorDetails">

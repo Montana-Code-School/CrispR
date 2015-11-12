@@ -103,11 +103,16 @@ var RecipeList = React.createClass({
 var VendorList = React.createClass({
  render: function(){
       var vendorListItems = this.props.data.map(function(item){
-           return ( <ul id="vendorItems"><h3 className="returnTitles">Vendor</h3>
-                    <h4> {item.vendorName} </h4>
-                    <li> {item.meats.join(', ')} </li> 
-                    <li> {item.fruits.join(', ')} </li> 
-                    <li> {item.veggies.join(', ')} </li></ul> 
+           return ( <ul id="vendorItems">
+                    <img className="pull-right" id="vendorPic" src={item.img} />
+                    <h3 className="returnTitles">Vendor</h3>
+                    <h4> Vendor: {item.vendorName} </h4><br/>
+                    <li> Veggies: <br/> {item.veggies.join(', ')}</li><br/>
+                    <li> Fruits: <br/> {item.fruits.join(', ')} </li><br/>
+                    <li> Meat: <br/> {item.meats.join(', ')} </li><br/> 
+                    <li> Other: <br/>{item.other.join(', ')} </li><br/>
+
+                    </ul> 
                      
 
              );

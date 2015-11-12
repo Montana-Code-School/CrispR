@@ -100,19 +100,18 @@
   text-align: center;
   margin-left: 15px;
   margin-right: 15px;
-  color: black;
+  color: white;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
 
 #instructions {
-  display: inline;
+  display: inline-flex;
   margin: auto;
   text-align: center;
+  
 }
-.instructions {
-  color: white;
-}
+
 #carrotRotate {
   height: 100px;
   float: right;
@@ -356,6 +355,15 @@ body {
   height: 200px;
   width:200px;
 }
+#vendorPic {
+  height: 100px;
+  width: 100px;
+  margin-right: 25px;
+  margin-top: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  /*margin-right: 100px;*/
+}
 #vendorDetails {
   margin-top: 20px;
   height: 200px;
@@ -400,5 +408,27 @@ body {
   background-color: #f89406; 
 }
 
+@media (max-width: 1000px){
+  #instructions{
+    display: none;
+  }
+
+  #vendorPic {
+    display: none;
+  }
+
+  #carrotLogo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h3{
+    margin-top: 80px;
+  }
+  #vengreed {
+    display: none;
+  }
+}
 
 

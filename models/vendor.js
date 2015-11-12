@@ -10,7 +10,8 @@ var VendorSchema = new Schema({
     veggies: Array,
     fruits: Array,
     meats: Array,
-    other: Array
+    other: Array,
+    img: String
 });
 
 module.exports = mongoose.model('Vendor', VendorSchema);
