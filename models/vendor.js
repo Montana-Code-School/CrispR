@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var VendorSchema = new Schema({
+var VendorSchema = new Schema ({
 
     vendorName: String,
     contactFirstName: String,
