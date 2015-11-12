@@ -18,7 +18,7 @@
 }
 #navbar-collapse-3 {
     margin-left: 100px;
-    margin-right: -100px;
+    margin-right: -25px;
     margin-top: 10px;
 }
 #navButtons {
@@ -63,7 +63,7 @@
 }
 
 #pushingCarrot {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .picRow{
   margin-top: 25px;
@@ -352,8 +352,9 @@ body {
 #farmStand {
   margin-top:30px;
   margin-left: 15px;
+  margin-right: 5px;
   height: 200px;
-  width:200px;
+  width: 200px;
 }
 #vendorPic {
   height: 100px;
