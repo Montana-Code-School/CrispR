@@ -18,6 +18,6 @@ We use MongoDB to construct our backend and move our data around.  Our data rout
 The frontend is comprised primarily of ReactJS with a skeleton framework of HTML.
 jQuery Ajax calls are used to bring data in from the API which you can find here:  http://food2fork.com/about/api
 
-If you'd like to check out any of the code, feel free to lock around.
+If you'd like to check out any of the code, feel free to look around.
 
 The end.
